@@ -1,0 +1,535 @@
+@import url(../css/register.css);
+
+:root {
+    --sprentyBlue: #11BAC5;
+    --sprentyDarkBlue: #11b9c5;
+    --sprentyCyan: #E7FDFF;
+    --textColor: #525252;
+}
+
+// Bootstrap Edit 
+
+.dropdown-menu[data-bs-popper] {
+    right: 0 !important;
+    left: unset !important;
+}
+
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    // user-select: none;
+
+    .sprenty-mainContainter {
+        padding: 0 !important;
+        margin: 0 !important;
+
+        .sprenty-leftBanner {
+            background-color: var(--sprentyBlue);
+
+            .sprenty-leftWrapper img {
+                width: 500px;
+            }
+
+            .sprenty-bannerTexts {
+                color: var(--sprentyCyan);
+            }
+        }
+
+        .sprenty-Modal {
+            .sprenty-modalWrap {
+                width: 420px;
+
+
+                .sprenty-modalHeading {
+                    h2 {
+                        color: var(--textColor) !important;
+                        font-size: 36px !important;
+                    }
+
+                    p span {
+                        color: var(--sprentyBlue);
+                    }
+                }
+
+                .sprenty-modalOptions {
+                    margin: 0;
+
+                    .sprenty-methodGoogle,
+                    .sprenty-methodTwitter,
+                    .sprenty-methodFacebook {
+                        height: 50px;
+                        cursor: pointer;
+                        transition: 0.2s all ease-in-out;
+                        padding: 0 !important;
+                    }
+
+                    .sprenty-methodTwitter,
+                    .sprenty-methodFacebook {
+                        width: 60px;
+                    }
+
+                    .sprenty-methodGoogle .sprenty-GoogleWrap p {
+                        margin-bottom: 0 !important;
+                        color: #828282;
+                        transition: 0.2s all ease-in-out;
+                    }
+
+                    .sprenty-methodGoogle:hover,
+                    .sprenty-methodTwitter:hover,
+                    .sprenty-methodFacebook:hover {
+                        background-color: var(--sprentyCyan);
+                        transition: 0.2s all ease-in-out;
+                        border: 1px solid var(--sprentyBlue) !important;
+
+                    }
+                }
+
+                .sprenty-localHeading {
+                    font-size: 14px;
+                    color: #828282;
+                    user-select: none;
+                }
+
+                .sprenty-formSection {
+                    label {
+                        font-size: 14px;
+                        color: #828282;
+                    }
+
+                    input {
+                        height: 50px;
+                        padding-left: 10px;
+                        outline: none;
+                        outline-color: var(--textColor) !important;
+                        font-family: 'Nunito Sans', sans-serif !important;
+                    }
+
+                    input {
+                        &:focus {
+                            border: 1px solid var(--sprentyBlue) !important;
+                        }
+
+                        &:active {
+                            background-color: #FCFCFE;
+                        }
+                    }
+
+                    .sprenty-checkbox input {
+                        height: auto !important;
+                    }
+
+                    .sprenty-checkbox .sprenty-passReset a {
+                        color: var(--sprentyBlue);
+                        text-decoration: none;
+                        font-size: 14px;
+                        user-select: none;
+                    }
+
+                    .sprenty-submitBtn {
+                        color: #FFFFFF;
+                        background-color: var(--sprentyBlue);
+                    }
+
+                    .sprenty-checkbox label a {
+                        color: var(--sprentyBlue);
+                        text-decoration: none;
+                        font-size: 14px;
+                        user-select: none;
+                    }
+                }
+            }
+
+            .sprenty-member {
+                user-select: none;
+
+                p {
+                    color: #828282;
+                }
+
+                p a {
+                    color: var(--sprentyBlue);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    // Home page - In case CSS Files need to be separated.
+
+    .sprenty-mainDiv {
+        // padding: 0 150px !important;
+
+        a img {
+            width: 100px;
+        }
+
+        .sprenty-collapse .sprenty-leftNav {
+
+            .sprenty-language img {
+                width: 35px !important;
+            }
+
+            .sprenty-navNotification {
+                font-size: 25px;
+                color: #83868B;
+                cursor: pointer;
+            }
+
+            .sprenty-verticalLine {
+                border-left: 3px solid #EEF1F6;
+                height: 40px !important;
+            }
+
+            .sprenty-dropdown {
+
+                .sprenty-profilePic img {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                .sprenty-profileName p {
+                    margin: 0 !important;
+                    color: var(--textColor)
+                }
+
+                .sprenty-dropdown-menu li a {
+                    color: var(--textColor);
+
+                    &:active {
+                        background-color: var(--sprentyCyan);
+                    }
+                }
+            }
+        }
+    }
+
+    .sprenty-overWrap {
+
+        .sprenty-overlayIMG {
+            height: 500px;
+            background: url("../images/stadium.jpg") center no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(163, 228, 219, 0.8);
+                backdrop-filter: blur(4px);
+                z-index: -1;
+            }
+
+            .sprenty-overlayContent {
+                color: #FFFFFF !important;
+
+                .sprenty-overlayTexts {
+                    h1 {
+                        font-size: 3.5rem;
+                    }
+
+                    h3 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .sprenty-locSearch {
+
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0px -25px 50px 32px rgba(0, 0, 0, 0.1);
+                    z-index: -1;
+                    // height: 50px;
+                }
+
+                .sprenty-locBar {
+                    padding: 0 3rem;
+                    background-color: white;
+                    border-radius: 14px;
+
+                    .sprenty-locBarContent {
+
+                        .sprenty-barTopContent {
+
+                            border-bottom: 1px solid var(--textColor);
+
+                            .sprenty-barSports {
+                                justify-content: space-between;
+
+                                color: var(--textColor);
+
+                                div {
+                                    cursor: pointer;
+                                    position: relative;
+
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: -2%;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 3px;
+                                    }
+
+                                    &:hover:after {
+                                        background-color: #11b9c5;
+                                    }
+                                }
+
+                                div:hover {
+                                    color: var(--sprentyDarkBlue);
+
+                                }
+
+                                div p {
+                                    margin: 0;
+
+                                }
+
+
+                            }
+                        }
+                    }
+
+                    .sprenty-locManager {
+
+                        .sprenty-locPicker {
+                            display: flex;
+                            justify-content: space-between;
+
+                            div {
+                                position: relative;
+                                background-color: #F6F7F9;
+                                border-color: #F2F2F2 !important;
+
+                                .sprenty-locWrap {}
+
+                                div h5 {
+                                    color: #43464D;
+                                }
+
+                                div p {
+                                    color: #B2B5C4;
+                                }
+                            }
+
+                            .sprenty-currentLoc {
+                                width: 300px;
+                            }
+
+                            .sprenty-destinationLoc {
+                                width: 230px;
+                            }
+
+                            .sprenty-checkIn {
+                                width: 215px;
+                            }
+
+                            .sprenty-checkOut {
+                                width: 215px;
+
+                            }
+
+                            .sprenty-connector {
+                                background-color: #FFFFFF;
+                                position: absolute;
+                                width: 36px;
+                                height: 36px;
+                                top: 24%;
+                                right: 95%;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: var(--textColor);
+                            }
+                        }
+
+                    }
+                }
+
+                .sprenty-searchSec {
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .sprenty-searchSecWrap {
+                        margin-top: 70px;
+
+                        .sprenty-srchButton {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: var(--sprentyBlue);
+                            width: 150px;
+                            height: 70px;
+                            color: #FFFFFF;
+                            font-size: 18px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .sprenty-districts {
+        margin-top: 160px;
+        
+        .sprenty-districtsWrap {
+
+            .sprenty-distHeader {
+                text-align: center;
+                padding: 0 20%;
+                
+                p, h1 {
+                    margin: 0;
+                }
+
+                p {
+                    color: var(--textColor);
+                }
+            }
+
+            .sprenty-districtsList {
+                margin-top: 90px;
+
+                .sprenty-listWrap {
+
+                    .sprenty-card {
+
+                        .sprenty-cardInner {
+
+                            .sprenty-cardIMG {
+                                width: 60px;
+                                height: 60px;
+                                background: url("../images/districts/saburtalo.webp") center no-repeat;
+                                background-size: cover;
+                            }
+
+                            .sprenty-cardName h5, .sprenty-locCount p {
+                                margin: 0!important;
+                            }
+                            .sprenty-locCount p  {
+                                font-size: 14px;
+                                color: var(--textColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Responsive for home.html
+
+    @media screen and (max-width: 1400px) {
+        .sprenty-locBar {
+            flex-direction: column;
+        }
+
+        .sprenty-currentLoc {
+            width: 100% !important;
+            margin-bottom: 15px;
+        }
+
+        .sprenty-connector {
+            display: none !important;
+        }
+
+        .sprenty-searchSec {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center;
+        }
+
+        .sprenty-searchSecWrap {
+            margin: 0 0 1.5rem 0 !important;
+        }
+
+        .sprenty-destinationLoc,
+        .sprenty-checkIn,
+        .sprenty-checkOut {
+            width: 32% !important;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .sprenty-destinationLoc {
+            width: 100% !important;
+            margin-bottom: 15px;
+        }
+
+        .sprenty-checkIn,
+        .sprenty-checkOut {
+            width: 49% !important;
+        }
+
+        .sprenty-locPicker {
+            justify-content: space-between !important;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .sprenty-locBar {
+            padding: 0 1rem !important;
+        }
+
+        .sprenty-locPicker div div {
+            margin: 0 !important;
+
+            h5 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .item {
+        background-color: red;
+        width: 250px;
+        height: 250px;
+    }
+
+
+    // The end of responsive for home.html
+
+    // The end of Home page - In case CSS Files need to be separated
+
+    // Responsive for Register.html & login.html
+
+    @media screen and (max-width: 1200px) {
+        .sprenty-leftBanner {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .sprenty-googleText {
+            display: none;
+        }
+
+        .sprenty-methodGoogle {
+            width: 60px !important;
+        }
+
+        .sprenty-barSports {
+            justify-content: space-around;
+        }
+
+        .sprenty-basketball {
+            padding: 0 !important;
+        }
+    }
+
+    // The end Responsive for Register.html & login.html
+
+}

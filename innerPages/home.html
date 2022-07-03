@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprenty - Home</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+    <nav class="container-fluid sprenty-navbar navbar navbar-expand-lg my-2">
+        <div class="sprenty-mainDiv container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sprenty-collapse collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="sprenty-leftNav navbar-nav d-flex justify-content-center align-items-center">
+                    <div class="sprenty-language">
+                        <img src="../assets/images/usaIcon.png" alt="">
+                    </div>
+                    <div class="sprenty-navNotification ms-3">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="sprenty-verticalLine ms-3 h-100"></div>
+                    <div class="sprenty-dropdown dropdown ms-3">
+                        <div class="dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="sprenty-profilePic">
+                                <img class="rounded-circle" src="../assets/images/profilePic.jpg" alt="">
+                            </div>
+                            <div class="sprenty-profileName mx-3">
+                                <p>Henry</p>
+                            </div>
+                        </div>
+                        <ul class="sprenty-dropdown-menu dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="#">Profile <i class="fa-solid fa-user"></i></a></li>
+                            <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="#">Bookings <i class="fa-solid fa-ticket"></i></a></li>
+                            <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="#">Settings <i class="fa-solid fa-gear"></i></a></li>
+                            <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="/login.html">Log out <i class="fa-solid fa-right-from-bracket"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="sprenty-overWrap position-relative">
+        <div class="sprenty-overlayIMG d-flex align-items-center">
+            <div class="sprenty-overlayContent container align-items-center">
+                <div class="sprenty-overlayTexts">
+                    <h1 class="fw-bolder ">All sports facilities <br> in one space</h1>
+                    <h3 class="fw-bold mt-5">Find and book the arena of your choice</h3>
+                </div>
+                <div class="sprenty-locSearch container row position-absolute">
+                    <div class="sprenty-locBar d-flex w-100 ">
+                        <div class="sprenty-barWrap col-xxl-10">
+                            <div class="sprenty-locBarContent ">
+                                <div class="sprenty-barTopContent">
+                                    <div class="sprenty-barSports d-flex align-items-center col-xxl-4 col-xl-4">
+                                        <div class="sprenty-football py-4">
+                                            <p> <span><i class="fa-regular fa-futbol"></i></span> Football</p>
+                                        </div>
+                                        <div class="sprenty-basketball py-4">
+                                            <p><span><i class="fa-solid fa-basketball"></i></span> Basketball</p>
+                                        </div>
+                                        <div class="sprenty-tennis py-4">
+                                            <p><span><i class="fa-solid fa-basketball"></i></span> Tennis</p>
+                                        </div>
+                                    </div>
+                                    <div class="sprenty-barOptions col-xxl-8"></div>
+                                </div>
+                            </div>
+                            <div class="sprenty-locManager position-relative">
+                                <div class="sprenty-locPicker container row position-relative m-0 px-0 py-4">
+                                    <div class="sprenty-currentLoc p-2 border rounded">
+                                        <div class="sprenty-locWrap ms-4">
+                                            <h5 class="fw-bold mb-1">Leaving From</h5>
+                                            <p class="fw-light m-0">Your current location</p>
+                                        </div>
+                                    </div>
+                                    <div class="sprenty-destinationLoc p-2 border rounded ">
+                                        <div class="sprenty-locWrap ms-4">
+                                            <h5 class="fw-bold mb-1">Going to</h5>
+                                            <p class="fw-light m-0">Going to</p>
+                                        </div>
+                                        <div class="sprenty-connector">
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="sprenty-checkIn p-2 border rounded ">
+                                        <div class="sprenty-locWrap ms-4">
+                                            <h5 class="fw-bold mb-1">Check in</h5>
+                                            <p class="fw-light m-0">Add date</p>
+                                        </div>
+                                        <div class="sprenty-connector">
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="sprenty-checkOut p-2 border rounded ">
+                                        <div class="sprenty-locWrap ms-4">
+                                            <h5 class="fw-bold mb-1">Check out</h5>
+                                            <p class="fw-light m-0">Add date</p>
+                                        </div>
+                                        <div class="sprenty-connector">
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sprenty-searchSec d-flex col-xxl-2">
+                            <div class="sprenty-searchSecWrap ">
+                                <div class="sprenty-srchButton rounded">
+                                    <p class="fw-bold m-0">Search</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sprenty-districts">
+        <div class="sprenty-districtsWrap container">
+            <div class="sprenty-distHeader">
+                <h1 class="fw-bolder">Search the district of your choice</h1>
+                <p class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse debitis officia, maxime expedita numquam pariatur perferendis voluptatum fugiat, deleniti possimus doloremque vero provident et totam.</p>
+            </div>
+            <div class="sprenty-districtsList">
+                <div class="sprenty-listWrap row">
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sprenty-card border rounded col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="sprenty-cardInner py-4 px-3">
+                            <div class="sprenty-cardIMG rounded"></div>
+                            <div class="sprenty-cardName mt-4">
+                                <h5 class="fw-semibold">Tbilisi, Saburtalo</h5>
+                            </div>
+                            <div class="sprenty-locCount mt-3">
+                                <p class="">64 Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
