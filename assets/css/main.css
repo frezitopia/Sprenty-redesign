@@ -12,78 +12,61 @@
 }
 
 * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding: 0;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
-
 * .sprenty-mainContainter {
   padding: 0 !important;
   margin: 0 !important;
 }
-
 * .sprenty-mainContainter .sprenty-leftBanner {
   background-color: var(--sprentyBlue);
 }
-
 * .sprenty-mainContainter .sprenty-leftBanner .sprenty-leftWrapper img {
   width: 500px;
 }
-
 * .sprenty-mainContainter .sprenty-leftBanner .sprenty-bannerTexts {
   color: var(--sprentyCyan);
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap {
   width: 420px;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalHeading h2 {
   color: var(--textColor) !important;
   font-size: 36px !important;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalHeading p span {
   color: var(--sprentyBlue);
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions {
   margin: 0;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodGoogle,
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodTwitter,
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodFacebook {
   height: 50px;
   cursor: pointer;
-  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   padding: 0 !important;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodTwitter,
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodFacebook {
   width: 60px;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodGoogle .sprenty-GoogleWrap p {
   margin-bottom: 0 !important;
   color: #828282;
-  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodGoogle:hover,
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodTwitter:hover,
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalOptions .sprenty-methodFacebook:hover {
   background-color: var(--sprentyCyan);
-  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border: 1px solid var(--sprentyBlue) !important;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-localHeading {
   font-size: 14px;
   color: #828282;
@@ -92,32 +75,26 @@
       -ms-user-select: none;
           user-select: none;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection label {
   font-size: 14px;
   color: #828282;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection input {
   height: 50px;
   padding-left: 10px;
   outline: none;
   outline-color: var(--textColor) !important;
-  font-family: 'Nunito Sans', sans-serif !important;
+  font-family: "Nunito Sans", sans-serif !important;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection input:focus {
   border: 1px solid var(--sprentyBlue) !important;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection input:active {
   background-color: #FCFCFE;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection .sprenty-checkbox input {
   height: auto !important;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection .sprenty-checkbox .sprenty-passReset a {
   color: var(--sprentyBlue);
   text-decoration: none;
@@ -127,12 +104,10 @@
       -ms-user-select: none;
           user-select: none;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection .sprenty-submitBtn {
   color: #FFFFFF;
   background-color: var(--sprentyBlue);
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection .sprenty-checkbox label a {
   color: var(--sprentyBlue);
   text-decoration: none;
@@ -142,60 +117,48 @@
       -ms-user-select: none;
           user-select: none;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-member {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-member p {
   color: #828282;
 }
-
 * .sprenty-mainContainter .sprenty-Modal .sprenty-member p a {
   color: var(--sprentyBlue);
   text-decoration: none;
 }
-
 * .sprenty-mainDiv a img {
   width: 100px;
 }
-
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-language img {
   width: 35px !important;
 }
-
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-navNotification {
   font-size: 25px;
   color: #83868B;
   cursor: pointer;
 }
-
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-verticalLine {
   border-left: 3px solid #EEF1F6;
   height: 40px !important;
 }
-
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-dropdown .sprenty-profilePic img {
   width: 35px;
   height: 35px;
 }
-
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-dropdown .sprenty-profileName p {
   margin: 0 !important;
   color: var(--textColor);
 }
-
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-dropdown .sprenty-dropdown-menu li a {
   color: var(--textColor);
 }
-
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-dropdown .sprenty-dropdown-menu li a:active {
   background-color: var(--sprentyCyan);
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG {
   height: 500px;
   background: url("../images/stadium.jpg") center no-repeat;
@@ -203,7 +166,6 @@
   position: relative;
   z-index: 1;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG::after {
   content: "";
   position: absolute;
@@ -216,110 +178,82 @@
           backdrop-filter: blur(4px);
   z-index: -1;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-overlayContent {
   color: #FFFFFF !important;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-overlayContent .sprenty-overlayTexts h1 {
   font-size: 3.5rem;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-overlayContent .sprenty-overlayTexts h3 {
   font-size: 2rem;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: 0px -25px 50px 32px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px -25px 50px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -25px 50px 32px rgba(0, 0, 0, 0.1);
   z-index: -1;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar {
   padding: 0 3rem;
   background-color: white;
   border-radius: 14px;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locBarContent .sprenty-barTopContent {
   border-bottom: 1px solid var(--textColor);
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locBarContent .sprenty-barTopContent .sprenty-barSports {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   color: var(--textColor);
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locBarContent .sprenty-barTopContent .sprenty-barSports div {
   cursor: pointer;
   position: relative;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locBarContent .sprenty-barTopContent .sprenty-barSports div::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2%;
   left: 0;
   width: 100%;
   height: 3px;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locBarContent .sprenty-barTopContent .sprenty-barSports div:hover:after {
   background-color: #11b9c5;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locBarContent .sprenty-barTopContent .sprenty-barSports div:hover {
   color: var(--sprentyDarkBlue);
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locBarContent .sprenty-barTopContent .sprenty-barSports div p {
   margin: 0;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker div {
   position: relative;
   background-color: #F6F7F9;
   border-color: #F2F2F2 !important;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker div div h5 {
   color: #43464D;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker div div p {
   color: #B2B5C4;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker .sprenty-currentLoc {
   width: 300px;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker .sprenty-destinationLoc {
   width: 230px;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker .sprenty-checkIn {
   width: 215px;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker .sprenty-checkOut {
   width: 215px;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker .sprenty-connector {
   background-color: #FFFFFF;
   position: absolute;
@@ -328,91 +262,60 @@
   top: 24%;
   right: 95%;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: var(--textColor);
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-searchSec {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-searchSec .sprenty-searchSecWrap {
   margin-top: 70px;
 }
-
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-searchSec .sprenty-searchSecWrap .sprenty-srchButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: var(--sprentyBlue);
   width: 150px;
   height: 70px;
   color: #FFFFFF;
   font-size: 18px;
 }
-
 * .sprenty-districts {
   margin-top: 160px;
 }
-
 * .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader {
   text-align: center;
   padding: 0 20%;
 }
-
 * .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader p, * .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader h1 {
   margin: 0;
 }
-
 * .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader p {
   color: var(--textColor);
 }
-
 * .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList {
   margin-top: 90px;
 }
-
 * .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
   width: 60px;
   height: 60px;
   background: url("../images/districts/saburtalo.webp") center no-repeat;
   background-size: cover;
 }
-
 * .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5, * .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   margin: 0 !important;
 }
-
 * .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   font-size: 14px;
   color: var(--textColor);
 }
-
 @media screen and (max-width: 1400px) {
   * .sprenty-locBar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   * .sprenty-currentLoc {
     width: 100% !important;
@@ -422,42 +325,32 @@
     display: none !important;
   }
   * .sprenty-searchSec {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center !important;
+    align-items: center;
   }
   * .sprenty-searchSecWrap {
     margin: 0 0 1.5rem 0 !important;
   }
   * .sprenty-destinationLoc,
-  * .sprenty-checkIn,
-  * .sprenty-checkOut {
+* .sprenty-checkIn,
+* .sprenty-checkOut {
     width: 32% !important;
   }
 }
-
 @media screen and (max-width: 992px) {
   * .sprenty-destinationLoc {
     width: 100% !important;
     margin-bottom: 15px;
   }
   * .sprenty-checkIn,
-  * .sprenty-checkOut {
+* .sprenty-checkOut {
     width: 49% !important;
   }
   * .sprenty-locPicker {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
 }
-
 @media screen and (max-width: 576px) {
   * .sprenty-locBar {
     padding: 0 1rem !important;
@@ -469,19 +362,16 @@
     font-size: 1.1rem;
   }
 }
-
 * .item {
   background-color: red;
   width: 250px;
   height: 250px;
 }
-
 @media screen and (max-width: 1200px) {
   * .sprenty-leftBanner {
     display: none;
   }
 }
-
 @media screen and (max-width: 576px) {
   * .sprenty-googleText {
     display: none;
@@ -490,11 +380,9 @@
     width: 60px !important;
   }
   * .sprenty-barSports {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   * .sprenty-basketball {
     padding: 0 !important;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
