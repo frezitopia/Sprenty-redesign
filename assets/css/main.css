@@ -284,151 +284,262 @@
 * .sprenty-districts {
   margin-top: 160px;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader {
+* .sprenty-districts .sprenty-districtsWrap .sprenty-header {
   text-align: center;
   padding: 0 15%;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader p,
-* .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader h1 {
+* .sprenty-districts .sprenty-districtsWrap .sprenty-header p,
+* .sprenty-districts .sprenty-districtsWrap .sprenty-header h1 {
   margin: 0;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader p {
+* .sprenty-districts .sprenty-districtsWrap .sprenty-header p {
   color: var(--textColor);
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList {
+* .sprenty-districts .sprenty-districtsList {
   display: flex;
   justify-content: center;
   padding: 0 !important;
   margin-top: 40px;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap {
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap {
   position: relative;
   padding-right: 0 !important;
   padding-left: 0 !important;
   justify-content: center;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner {
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner {
   margin-top: 25px;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap:hover {
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap:hover {
   box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner {
-  padding: 1.5rem 1rem;
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner {
+  padding: 1.5rem 1.3rem;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
   width: 60px;
   height: 60px;
   background: url("../images/districts/saburtalo.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5,
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5,
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   margin: 0 !important;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   font-size: 14px;
   color: var(--textColor);
 }
+
+.sprenty-destinations {
+  margin-top: 75px;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-header p {
+  color: var(--textColor);
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-header p span {
+  color: var(--sprentyBlue);
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop {
+  background: url("../images/destinations/lisi.webp") center no-repeat;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfLeft .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfRight .sprenty-rating {
+  width: 70px;
+  height: 30px;
+  background-color: var(--sprentyCyan);
+  color: var(--sprentyBlue);
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfLeft .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfRight .sprenty-rating p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+  justify-content: center;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfLeft {
+  background: url("../images/destinations/daraselia.webp") center no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49% !important;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfRight {
+  background: url("../images/destinations/makarana.webp") center no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49% !important;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating {
+  width: 50px;
+  height: 25px;
+  font-size: 13px;
+  background-color: var(--sprentyCyan);
+  color: var(--sprentyBlue);
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating p, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating p, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+  justify-content: center;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest {
+  background: url("../images/destinations/mziuri.webp") center no-repeat;
+  background-size: cover;
+  height: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest {
+  background: url("../images/destinations/imedi.webp") center no-repeat;
+  background-size: cover;
+  height: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest {
+  background: url("../images/destinations/school.webp") center no-repeat;
+  background-size: cover;
+  height: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 1400px) {
-  * .sprenty-barWrap {
+  .sprenty-barWrap {
     width: 100% !important;
   }
-  * .sprenty-locBar {
+
+  .sprenty-locBar {
     flex-direction: column;
   }
-  * .sprenty-currentLoc {
+
+  .sprenty-currentLoc {
     width: 100% !important;
     margin-bottom: 15px;
   }
-  * .sprenty-connector {
+
+  .sprenty-connector {
     display: none !important;
   }
-  * .sprenty-searchSec {
+
+  .sprenty-searchSec {
     display: flex !important;
     justify-content: center !important;
     align-items: center;
     width: 100%;
   }
-  * .sprenty-searchSecWrap {
+
+  .sprenty-searchSecWrap {
     margin: 0 0 1.5rem 0 !important;
   }
-  * .sprenty-destinationLoc,
-* .sprenty-checkIn,
-* .sprenty-checkOut {
+
+  .sprenty-destinationLoc,
+.sprenty-checkIn,
+.sprenty-checkOut {
     width: 32% !important;
   }
-  * .sprenty-districts {
+
+  .sprenty-districts {
     margin-top: 320px;
   }
 }
 @media screen and (max-width: 992px) {
-  * .sprenty-destinationLoc {
+  .sprenty-destinationLoc {
     width: 100% !important;
     margin-bottom: 15px;
   }
-  * .sprenty-checkIn,
-* .sprenty-checkOut {
+
+  .sprenty-checkIn,
+.sprenty-checkOut {
     width: 49% !important;
   }
-  * .sprenty-locPicker {
+
+  .sprenty-locPicker {
     justify-content: space-between !important;
   }
-  * .sprenty-distHeader {
+
+  .sprenty-header {
     padding: 0 5% !important;
   }
-  * .sprenty-districts {
+
+  .sprenty-districts {
     margin-top: 380px;
   }
 }
 @media screen and (max-width: 768px) {
-  * .sprenty-cardInner {
+  .sprenty-cardInner {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  * .owl-nav.disabled {
+
+  .owl-nav.disabled {
     display: flex !important;
   }
 }
 @media screen and (max-width: 576px) {
-  * .sprenty-locBar {
+  .sprenty-locBar {
     padding: 0 1rem !important;
   }
-  * .sprenty-locPicker div div {
+
+  .sprenty-locPicker div div {
     margin: 0 !important;
   }
-  * .sprenty-locPicker div div h5 {
+  .sprenty-locPicker div div h5 {
     font-size: 1.1rem;
   }
-  * .sprenty-districts {
+
+  .sprenty-districts {
     margin-top: 400px;
   }
-  * .sprenty-listWrap {
+
+  .sprenty-listWrap {
     box-shadow: none !important;
   }
 }
 @media screen and (max-width: 1200px) {
-  * .sprenty-leftBanner {
+  .sprenty-leftBanner {
     display: none;
   }
 }
 @media screen and (max-width: 576px) {
-  * .sprenty-googleText {
+  .sprenty-googleText {
     display: none;
   }
-  * .sprenty-methodGoogle {
+
+  .sprenty-methodGoogle {
     width: 60px !important;
   }
-  * .sprenty-barSports {
+
+  .sprenty-barSports {
     justify-content: space-around;
   }
-  * .sprenty-basketball {
+
+  .sprenty-basketball {
     padding: 0 !important;
   }
 }
-
 .owl-stage-outer {
   padding: 0 !important;
 }
@@ -465,6 +576,7 @@
   color: var(--sprentyBlue) !important;
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
   color: var(--sprentyDarkBlue) !important;
 }/*# sourceMappingURL=main.css.map */

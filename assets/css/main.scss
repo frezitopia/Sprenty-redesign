@@ -157,7 +157,6 @@
   // Home page - In case CSS Files need to be separated.
 
   .sprenty-mainDiv {
-
     .sprenty-collapse .sprenty-leftNav {
       .sprenty-language img {
         width: 35px !important;
@@ -292,10 +291,6 @@
                 position: relative;
                 background-color: #f6f7f9;
                 border-color: #f2f2f2 !important;
-
-                .sprenty-locWrap {
-                }
-
                 div h5 {
                   color: #43464d;
                 }
@@ -365,7 +360,7 @@
     margin-top: 160px;
 
     .sprenty-districtsWrap {
-      .sprenty-distHeader {
+      .sprenty-header {
         text-align: center;
         padding: 0 15%;
 
@@ -378,44 +373,44 @@
           color: var(--textColor);
         }
       }
+    }
 
-      .sprenty-districtsList {
-        display: flex;
+    .sprenty-districtsList {
+      display: flex;
+      justify-content: center;
+      padding: 0 !important;
+      margin-top: 40px;
+      .sprenty-districtWrap {
+        position: relative;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
         justify-content: center;
-        padding: 0 !important;
-        margin-top: 40px;
-        .sprenty-districtWrap {
-          position: relative;
-          padding-right: 0 !important;
-          padding-left: 0 !important;
-          justify-content: center;
-          .item {
-            .itemInner {
-              margin-top: 25px;
-              .sprenty-listWrap {
-                &:hover {
-                  box-shadow: 0px 0px 35px -3px rgb(0, 0, 0, 0.1);
-                  transition: all 0.2s ease-in-out;
-                }
-                .sprenty-card {
-                  .sprenty-cardInner {
-                    padding: 1.5rem 1rem;
-                    .sprenty-cardIMG {
-                      width: 60px;
-                      height: 60px;
-                      background: url("../images/districts/saburtalo.webp")
-                        center no-repeat;
-                      background-size: cover;
-                    }
+        .item {
+          .itemInner {
+            margin-top: 25px;
+            .sprenty-listWrap {
+              &:hover {
+                box-shadow: 0px 0px 35px -3px rgb(0, 0, 0, 0.1);
+                transition: all 0.2s ease-in-out;
+              }
+              .sprenty-card {
+                .sprenty-cardInner {
+                  padding: 1.5rem 1.3rem;
+                  .sprenty-cardIMG {
+                    width: 60px;
+                    height: 60px;
+                    background: url("../images/districts/saburtalo.webp") center
+                      no-repeat;
+                    background-size: cover;
+                  }
 
-                    .sprenty-cardName h5,
-                    .sprenty-locCount p {
-                      margin: 0 !important;
-                    }
-                    .sprenty-locCount p {
-                      font-size: 14px;
-                      color: var(--textColor);
-                    }
+                  .sprenty-cardName h5,
+                  .sprenty-locCount p {
+                    margin: 0 !important;
+                  }
+                  .sprenty-locCount p {
+                    font-size: 14px;
+                    color: var(--textColor);
                   }
                 }
               }
@@ -425,139 +420,256 @@
       }
     }
   }
+}
 
-  // Responsive for home.html
+.sprenty-destinations {
+  margin-top: 75px;
+  .sprenty-destinationsWrap {
+    .sprenty-header {
+      p {
+        color: var(--textColor);
 
-  @media screen and (max-width: 1400px) {
-    .sprenty-barWrap {
-      width: 100% !important;
-    }
-
-    .sprenty-locBar {
-      flex-direction: column;
-    }
-
-    .sprenty-currentLoc {
-      width: 100% !important;
-      margin-bottom: 15px;
-    }
-
-    .sprenty-connector {
-      display: none !important;
-    }
-
-    .sprenty-searchSec {
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center;
-      width: 100%;
-    }
-
-    .sprenty-searchSecWrap {
-      margin: 0 0 1.5rem 0 !important;
-    }
-
-    .sprenty-destinationLoc,
-    .sprenty-checkIn,
-    .sprenty-checkOut {
-      width: 32% !important;
-    }
-
-    .sprenty-districts {
-      margin-top: 320px;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    .sprenty-destinationLoc {
-      width: 100% !important;
-      margin-bottom: 15px;
-    }
-
-    .sprenty-checkIn,
-    .sprenty-checkOut {
-      width: 49% !important;
-    }
-
-    .sprenty-locPicker {
-      justify-content: space-between !important;
-    }
-
-    .sprenty-distHeader {
-      padding: 0 5% !important;
-    }
-
-    .sprenty-districts {
-      margin-top: 380px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .sprenty-cardInner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .owl-nav.disabled {
-      display: flex!important;
-    }
-  }
-
-  @media screen and (max-width: 576px) {
-    .sprenty-locBar {
-      padding: 0 1rem !important;
-    }
-
-    .sprenty-locPicker div div {
-      margin: 0 !important;
-
-      h5 {
-        font-size: 1.1rem;
+        span {
+          color: var(--sprentyBlue);
+        }
       }
     }
+    .sprenty-destinationsList {
+      .sprenty-destinationsWrap {
+        .sprenty-leftSec {
+          .sprenty-innerTop {
+            background: url("../images/destinations/lisi.webp") center no-repeat;
+            background-size: cover;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .sprenty-innerTop,
+          .sprenty-botHalfLeft,
+          .sprenty-botHalfRight {
+            .sprenty-rating {
+              width: 70px;
+              height: 30px;
+              background-color: var(--sprentyCyan);
+              color: var(--sprentyBlue);
 
-    .sprenty-districts {
-      margin-top: 400px;
-    }
+              p {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-self: unset;
+                justify-content: center;
+              }
+            }
+          }
+          .sprenty-innerBot {
+            .sprenty-botHalfLeft {
+              background: url("../images/destinations/daraselia.webp") center
+              no-repeat;
+              background-size: cover;
+              height: 350px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 49%!important;
+            }
+            .sprenty-botHalfRight {
+              background: url("../images/destinations/makarana.webp") center
+              no-repeat;
+              background-size: cover;
+              height: 350px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 49%!important;
+            }
+          }
+        }
+        .sprenty-rightSec {
+          .sprenty-topDest, .sprenty-midDest, .sprenty-botDest {
+            .sprenty-rating {
+              width: 50px;
+              height: 25px;
+              font-size: 13px;
+              background-color: var(--sprentyCyan);
+              color: var(--sprentyBlue);
 
-    .sprenty-listWrap {
-      box-shadow: none !important;
+              p {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-self: unset;
+                justify-content: center;
+              }
+          }
+        }
+        .sprenty-topDest {
+          background: url("../images/destinations/mziuri.webp") center
+          no-repeat;
+          background-size: cover;
+          height: 31%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .sprenty-midDest {
+          background: url("../images/destinations/imedi.webp") center
+          no-repeat;
+          background-size: cover;
+          height: 31%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .sprenty-botDest {
+          background: url("../images/destinations/school.webp") center
+          no-repeat;
+          background-size: cover;
+          height: 31%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
     }
   }
-
-  // The end of responsive for home.html
-
-  // The end of Home page - In case CSS Files need to be separated
-
-  // Responsive for Register.html & login.html
-
-  @media screen and (max-width: 1200px) {
-    .sprenty-leftBanner {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 576px) {
-    .sprenty-googleText {
-      display: none;
-    }
-
-    .sprenty-methodGoogle {
-      width: 60px !important;
-    }
-
-    .sprenty-barSports {
-      justify-content: space-around;
-    }
-
-    .sprenty-basketball {
-      padding: 0 !important;
-    }
-  }
-
-  // The end Responsive for Register.html & login.html
 }
+}
+
+// Responsive for home.html
+
+@media screen and (max-width: 1400px) {
+  .sprenty-barWrap {
+    width: 100% !important;
+  }
+
+  .sprenty-locBar {
+    flex-direction: column;
+  }
+
+  .sprenty-currentLoc {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .sprenty-connector {
+    display: none !important;
+  }
+
+  .sprenty-searchSec {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sprenty-searchSecWrap {
+    margin: 0 0 1.5rem 0 !important;
+  }
+
+  .sprenty-destinationLoc,
+  .sprenty-checkIn,
+  .sprenty-checkOut {
+    width: 32% !important;
+  }
+
+  .sprenty-districts {
+    margin-top: 320px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sprenty-destinationLoc {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .sprenty-checkIn,
+  .sprenty-checkOut {
+    width: 49% !important;
+  }
+
+  .sprenty-locPicker {
+    justify-content: space-between !important;
+  }
+
+  .sprenty-header {
+    padding: 0 5% !important;
+  }
+
+  .sprenty-districts {
+    margin-top: 380px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sprenty-cardInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .owl-nav.disabled {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sprenty-locBar {
+    padding: 0 1rem !important;
+  }
+
+  .sprenty-locPicker div div {
+    margin: 0 !important;
+
+    h5 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .sprenty-districts {
+    margin-top: 400px;
+  }
+
+  .sprenty-listWrap {
+    box-shadow: none !important;
+  }
+}
+
+// The end of responsive for home.html
+
+// The end of Home page - In case CSS Files need to be separated
+
+// Responsive for Register.html & login.html
+
+@media screen and (max-width: 1200px) {
+  .sprenty-leftBanner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sprenty-googleText {
+    display: none;
+  }
+
+  .sprenty-methodGoogle {
+    width: 60px !important;
+  }
+
+  .sprenty-barSports {
+    justify-content: space-around;
+  }
+
+  .sprenty-basketball {
+    padding: 0 !important;
+  }
+}
+
+// The end Responsive for Register.html & login.html
 
 // owl
 
@@ -566,39 +678,39 @@
 }
 
 .owl-nav {
-  position: absolute!important;
-  display: flex!important;
+  position: absolute !important;
+  display: flex !important;
   justify-content: center;
-  display: none!important;
+  display: none !important;
   button {
     margin: 0 10px !important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
-    height: 30px!important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 30px !important;
 
     &:hover {
       background-color: none !important;
     }
     span {
       font-size: 55px;
-      display: flex!important;
-      height: 30px!important;
-      align-items: center!important;
+      display: flex !important;
+      height: 30px !important;
+      align-items: center !important;
     }
   }
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover {
-  background-color: unset!important;
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: unset !important;
   color: unset;
 }
 
 .disabled span {
-  color: var(--sprentyBlue)!important;
+  color: var(--sprentyBlue) !important;
 }
 
-.owl-prev, .owl-next {
-  color: var(--sprentyDarkBlue)!important;
+.owl-prev,
+.owl-next {
+  color: var(--sprentyDarkBlue) !important;
 }
-// owl
