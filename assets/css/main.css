@@ -1,8 +1,8 @@
 @import url(../css/register.css);
 :root {
-  --sprentyBlue: #11BAC5;
+  --sprentyBlue: #11bac5;
   --sprentyDarkBlue: #11b9c5;
-  --sprentyCyan: #E7FDFF;
+  --sprentyCyan: #e7fdff;
   --textColor: #525252;
 }
 
@@ -12,7 +12,7 @@
 }
 
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
@@ -90,7 +90,7 @@
   border: 1px solid var(--sprentyBlue) !important;
 }
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection input:active {
-  background-color: #FCFCFE;
+  background-color: #fcfcfe;
 }
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection .sprenty-checkbox input {
   height: auto !important;
@@ -105,7 +105,7 @@
           user-select: none;
 }
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection .sprenty-submitBtn {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--sprentyBlue);
 }
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-formSection .sprenty-checkbox label a {
@@ -130,19 +130,16 @@
   color: var(--sprentyBlue);
   text-decoration: none;
 }
-* .sprenty-mainDiv a img {
-  width: 100px;
-}
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-language img {
   width: 35px !important;
 }
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-navNotification {
   font-size: 25px;
-  color: #83868B;
+  color: #83868b;
   cursor: pointer;
 }
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-verticalLine {
-  border-left: 3px solid #EEF1F6;
+  border-left: 3px solid #eef1f6;
   height: 40px !important;
 }
 * .sprenty-mainDiv .sprenty-collapse .sprenty-leftNav .sprenty-dropdown .sprenty-profilePic img {
@@ -179,7 +176,7 @@
   z-index: -1;
 }
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-overlayContent {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-overlayContent .sprenty-overlayTexts h1 {
   font-size: 3.5rem;
@@ -233,14 +230,14 @@
 }
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker div {
   position: relative;
-  background-color: #F6F7F9;
-  border-color: #F2F2F2 !important;
+  background-color: #f6f7f9;
+  border-color: #f2f2f2 !important;
 }
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker div div h5 {
-  color: #43464D;
+  color: #43464d;
 }
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker div div p {
-  color: #B2B5C4;
+  color: #b2b5c4;
 }
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker .sprenty-currentLoc {
   width: 300px;
@@ -255,7 +252,7 @@
   width: 215px;
 }
 * .sprenty-overWrap .sprenty-overlayIMG .sprenty-locSearch .sprenty-locBar .sprenty-locManager .sprenty-locPicker .sprenty-connector {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: absolute;
   width: 36px;
   height: 36px;
@@ -281,7 +278,7 @@
   background-color: var(--sprentyBlue);
   width: 150px;
   height: 70px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
 }
 * .sprenty-districts {
@@ -289,31 +286,55 @@
 }
 * .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader {
   text-align: center;
-  padding: 0 20%;
+  padding: 0 15%;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader p, * .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader h1 {
+* .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader p,
+* .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader h1 {
   margin: 0;
 }
 * .sprenty-districts .sprenty-districtsWrap .sprenty-distHeader p {
   color: var(--textColor);
 }
 * .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList {
-  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  padding: 0 !important;
+  margin-top: 40px;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap {
+  position: relative;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  justify-content: center;
+}
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner {
+  margin-top: 25px;
+}
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap:hover {
+  box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner {
+  padding: 1.5rem 1rem;
+}
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
   width: 60px;
   height: 60px;
   background: url("../images/districts/saburtalo.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5, * .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5,
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   margin: 0 !important;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
+* .sprenty-districts .sprenty-districtsWrap .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   font-size: 14px;
   color: var(--textColor);
 }
 @media screen and (max-width: 1400px) {
+  * .sprenty-barWrap {
+    width: 100% !important;
+  }
   * .sprenty-locBar {
     flex-direction: column;
   }
@@ -328,6 +349,7 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center;
+    width: 100%;
   }
   * .sprenty-searchSecWrap {
     margin: 0 0 1.5rem 0 !important;
@@ -336,6 +358,9 @@
 * .sprenty-checkIn,
 * .sprenty-checkOut {
     width: 32% !important;
+  }
+  * .sprenty-districts {
+    margin-top: 320px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -350,6 +375,22 @@
   * .sprenty-locPicker {
     justify-content: space-between !important;
   }
+  * .sprenty-distHeader {
+    padding: 0 5% !important;
+  }
+  * .sprenty-districts {
+    margin-top: 380px;
+  }
+}
+@media screen and (max-width: 768px) {
+  * .sprenty-cardInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * .owl-nav.disabled {
+    display: flex !important;
+  }
 }
 @media screen and (max-width: 576px) {
   * .sprenty-locBar {
@@ -361,11 +402,12 @@
   * .sprenty-locPicker div div h5 {
     font-size: 1.1rem;
   }
-}
-* .item {
-  background-color: red;
-  width: 250px;
-  height: 250px;
+  * .sprenty-districts {
+    margin-top: 400px;
+  }
+  * .sprenty-listWrap {
+    box-shadow: none !important;
+  }
 }
 @media screen and (max-width: 1200px) {
   * .sprenty-leftBanner {
@@ -385,4 +427,44 @@
   * .sprenty-basketball {
     padding: 0 !important;
   }
+}
+
+.owl-stage-outer {
+  padding: 0 !important;
+}
+
+.owl-nav {
+  position: absolute !important;
+  display: flex !important;
+  justify-content: center;
+  display: none !important;
+}
+.owl-nav button {
+  margin: 0 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 30px !important;
+}
+.owl-nav button:hover {
+  background-color: none !important;
+}
+.owl-nav button span {
+  font-size: 55px;
+  display: flex !important;
+  height: 30px !important;
+  align-items: center !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: unset !important;
+  color: unset;
+}
+
+.disabled span {
+  color: var(--sprentyBlue) !important;
+}
+
+.owl-prev, .owl-next {
+  color: var(--sprentyDarkBlue) !important;
 }/*# sourceMappingURL=main.css.map */
