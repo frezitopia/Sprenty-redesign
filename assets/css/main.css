@@ -320,7 +320,37 @@
 * .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
   width: 60px;
   height: 60px;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-saburtalo {
   background: url("../images/districts/saburtalo.webp") center no-repeat;
+  background-size: cover;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-vake {
+  background: url("../images/districts/vake.webp") center no-repeat;
+  background-size: cover;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-gldani {
+  background: url("../images/districts/gldani.webp") center no-repeat;
+  background-size: cover;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-digomi {
+  background: url("../images/districts/digomi.webp") center no-repeat;
+  background-size: cover;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-minsk {
+  background: url("../images/districts/minsk.webp") center no-repeat;
+  background-size: cover;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-chugureti {
+  background: url("../images/districts/chugureti.webp") center no-repeat;
+  background-size: cover;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-lisi {
+  background: url("../images/districts/lisi.webp") center no-repeat;
+  background-size: cover;
+}
+* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-samgori {
+  background: url("../images/districts/samgori.webp") center no-repeat;
   background-size: cover;
 }
 * .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5,
