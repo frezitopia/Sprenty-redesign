@@ -463,32 +463,38 @@
                 justify-content: center;
               }
             }
+            .sprenty-name {
+              width: 100%;
+            }
           }
           .sprenty-innerBot {
             .sprenty-botHalfLeft {
               background: url("../images/destinations/daraselia.webp") center
-              no-repeat;
+                no-repeat;
               background-size: cover;
               height: 350px;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
-              width: 49%!important;
+              width: 49%;
             }
             .sprenty-botHalfRight {
               background: url("../images/destinations/makarana.webp") center
-              no-repeat;
+                no-repeat;
               background-size: cover;
               height: 350px;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
-              width: 49%!important;
+              width: 49%;
             }
           }
         }
         .sprenty-rightSec {
-          .sprenty-topDest, .sprenty-midDest, .sprenty-botDest {
+          .sprenty-topDest,
+          .sprenty-midDest,
+          .sprenty-botDest {
+            width: 100%;
             .sprenty-rating {
               width: 50px;
               height: 25px;
@@ -504,39 +510,42 @@
                 justify-self: unset;
                 justify-content: center;
               }
+            }
+            .sprenty-name {
+              width: 100%;
+            }
           }
-        }
-        .sprenty-topDest {
-          background: url("../images/destinations/mziuri.webp") center
-          no-repeat;
-          background-size: cover;
-          height: 31%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-        .sprenty-midDest {
-          background: url("../images/destinations/imedi.webp") center
-          no-repeat;
-          background-size: cover;
-          height: 31%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-        .sprenty-botDest {
-          background: url("../images/destinations/school.webp") center
-          no-repeat;
-          background-size: cover;
-          height: 31%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          .sprenty-topDest {
+            background: url("../images/destinations/mziuri.webp") center
+              no-repeat;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .sprenty-midDest {
+            background: url("../images/destinations/imedi.webp") center
+              no-repeat;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .sprenty-botDest {
+            background: url("../images/destinations/school.webp") center
+              no-repeat;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
         }
       }
     }
   }
-}
 }
 
 // Responsive for home.html
@@ -581,6 +590,13 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .sprenty-botHalfLeft,
+  .sprenty-botHalfRight {
+    height: 250px !important;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .sprenty-destinationLoc {
     width: 100% !important;
@@ -600,8 +616,19 @@
     padding: 0 5% !important;
   }
 
+  .sprenty-destinationsWrap .sprenty-header {
+    padding: 0 !important;
+  }
+
   .sprenty-districts {
     margin-top: 380px;
+  }
+
+  .sprenty-topDest,
+  .sprenty-midDest,
+  .sprenty-botDest {
+    width: 32%!important;
+    height: 150px !important;
   }
 }
 
@@ -636,6 +663,28 @@
 
   .sprenty-listWrap {
     box-shadow: none !important;
+  }
+
+
+
+  .sprenty-destinationsWrap .sprenty-header {
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 575px) {
+  .sprenty-topDest, .sprenty-midDest, .sprenty-botDest {
+    width: 70%!important;
+  }
+  .sprenty-botHalfLeft, .sprenty-botHalfRight {
+    width: 70%!important;
+  }
+
+    .sprenty-innerTop {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 

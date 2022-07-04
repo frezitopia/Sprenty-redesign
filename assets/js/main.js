@@ -1,6 +1,6 @@
 $('.owl-carousel').owlCarousel(
     {
-    loop:false,
+    loop: true,
     margin: 25,
     dots: false,
     responsive:{

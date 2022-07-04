@@ -367,6 +367,11 @@
   justify-self: unset;
   justify-content: center;
 }
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfLeft .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfRight .sprenty-name {
+  width: 100%;
+}
 .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfLeft {
   background: url("../images/destinations/daraselia.webp") center no-repeat;
   background-size: cover;
@@ -374,7 +379,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 49% !important;
+  width: 49%;
 }
 .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfRight {
   background: url("../images/destinations/makarana.webp") center no-repeat;
@@ -383,16 +388,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 49% !important;
+  width: 49%;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest {
+  width: 100%;
+}
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating {
   width: 50px;
   height: 25px;
   font-size: 13px;
   background-color: var(--sprentyCyan);
   color: var(--sprentyBlue);
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating p, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating p, .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating p {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating p {
   width: 100%;
   height: 100%;
   display: flex;
@@ -400,10 +414,15 @@
   justify-self: unset;
   justify-content: center;
 }
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-name {
+  width: 100%;
+}
 .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest {
   background: url("../images/destinations/mziuri.webp") center no-repeat;
   background-size: cover;
-  height: 31%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -411,7 +430,7 @@
 .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest {
   background: url("../images/destinations/imedi.webp") center no-repeat;
   background-size: cover;
-  height: 31%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -419,7 +438,7 @@
 .sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest {
   background: url("../images/destinations/school.webp") center no-repeat;
   background-size: cover;
-  height: 31%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -464,6 +483,12 @@
     margin-top: 320px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .sprenty-botHalfLeft,
+.sprenty-botHalfRight {
+    height: 250px !important;
+  }
+}
 @media screen and (max-width: 992px) {
   .sprenty-destinationLoc {
     width: 100% !important;
@@ -483,8 +508,19 @@
     padding: 0 5% !important;
   }
 
+  .sprenty-destinationsWrap .sprenty-header {
+    padding: 0 !important;
+  }
+
   .sprenty-districts {
     margin-top: 380px;
+  }
+
+  .sprenty-topDest,
+.sprenty-midDest,
+.sprenty-botDest {
+    width: 32% !important;
+    height: 150px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -516,6 +552,24 @@
 
   .sprenty-listWrap {
     box-shadow: none !important;
+  }
+
+  .sprenty-destinationsWrap .sprenty-header {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .sprenty-topDest, .sprenty-midDest, .sprenty-botDest {
+    width: 70% !important;
+  }
+
+  .sprenty-botHalfLeft, .sprenty-botHalfRight {
+    width: 70% !important;
+  }
+
+  .sprenty-innerTop {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1200px) {
