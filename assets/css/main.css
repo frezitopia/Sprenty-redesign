@@ -4,6 +4,7 @@
   --sprentyDarkBlue: #11b9c5;
   --sprentyCyan: #e7fdff;
   --textColor: #525252;
+  --starColor: #fed166;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -281,89 +282,89 @@
   color: #ffffff;
   font-size: 18px;
 }
-* .sprenty-districts {
-  margin-top: 160px;
+* .sprenty-districtsWrap {
+  padding-top: 140px;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-header {
+* .sprenty-districtsWrap .sprenty-header {
   text-align: center;
   padding: 0 15%;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-header p,
-* .sprenty-districts .sprenty-districtsWrap .sprenty-header h1 {
+* .sprenty-districtsWrap .sprenty-header p,
+* .sprenty-districtsWrap .sprenty-header h1 {
   margin: 0;
 }
-* .sprenty-districts .sprenty-districtsWrap .sprenty-header p {
+* .sprenty-districtsWrap .sprenty-header p {
   color: var(--textColor);
 }
-* .sprenty-districts .sprenty-districtsList {
+* .sprenty-districtsList {
   display: flex;
   justify-content: center;
   padding: 0 !important;
   margin-top: 40px;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap {
+* .sprenty-districtsList .sprenty-districtWrap {
   position: relative;
   padding-right: 0 !important;
   padding-left: 0 !important;
   justify-content: center;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner {
   margin-top: 25px;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap:hover {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap:hover {
   box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner {
   padding: 1.5rem 1.3rem;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardIMG {
   width: 60px;
   height: 60px;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-saburtalo {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-saburtalo {
   background: url("../images/districts/saburtalo.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-vake {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-vake {
   background: url("../images/districts/vake.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-gldani {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-gldani {
   background: url("../images/districts/gldani.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-digomi {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-digomi {
   background: url("../images/districts/digomi.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-minsk {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-minsk {
   background: url("../images/districts/minsk.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-chugureti {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-chugureti {
   background: url("../images/districts/chugureti.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-lisi {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-lisi {
   background: url("../images/districts/lisi.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-samgori {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-samgori {
   background: url("../images/districts/samgori.webp") center no-repeat;
   background-size: cover;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5,
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-cardName h5,
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   margin: 0 !important;
 }
-* .sprenty-districts .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
+* .sprenty-districtsList .sprenty-districtWrap .item .itemInner .sprenty-listWrap .sprenty-card .sprenty-cardInner .sprenty-locCount p {
   font-size: 14px;
   color: var(--textColor);
 }
 
-.sprenty-destinations {
-  margin-top: 75px;
+.sprenty-destinations .sprenty-destinationsWrap {
+  padding-top: 55px;
 }
 .sprenty-destinations .sprenty-destinationsWrap .sprenty-header p {
   color: var(--textColor);
@@ -371,7 +372,7 @@
 .sprenty-destinations .sprenty-destinationsWrap .sprenty-header p span {
   color: var(--sprentyBlue);
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-innerTop {
   background: url("../images/destinations/lisi.webp") center no-repeat;
   background-size: cover;
   height: 250px;
@@ -379,17 +380,17 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop .sprenty-rating,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfLeft .sprenty-rating,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfRight .sprenty-rating {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-innerTop .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-botHalfLeft .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-botHalfRight .sprenty-rating {
   width: 70px;
   height: 30px;
   background-color: var(--sprentyCyan);
   color: var(--sprentyBlue);
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop .sprenty-rating p,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfLeft .sprenty-rating p,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfRight .sprenty-rating p {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-innerTop .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-botHalfLeft .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-botHalfRight .sprenty-rating p {
   width: 100%;
   height: 100%;
   display: flex;
@@ -397,12 +398,12 @@
   justify-self: unset;
   justify-content: center;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerTop .sprenty-name,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfLeft .sprenty-name,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-botHalfRight .sprenty-name {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-innerTop .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-botHalfLeft .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-botHalfRight .sprenty-name {
   width: 100%;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfLeft {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfLeft {
   background: url("../images/destinations/daraselia.webp") center no-repeat;
   background-size: cover;
   height: 350px;
@@ -411,7 +412,7 @@
   justify-content: space-between;
   width: 49%;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfRight {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-leftSec .sprenty-innerBot .sprenty-botHalfRight {
   background: url("../images/destinations/makarana.webp") center no-repeat;
   background-size: cover;
   height: 350px;
@@ -420,23 +421,23 @@
   justify-content: space-between;
   width: 49%;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-topDest,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-midDest,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-botDest {
   width: 100%;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-topDest .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-midDest .sprenty-rating,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-botDest .sprenty-rating {
   width: 50px;
   height: 25px;
   font-size: 13px;
   background-color: var(--sprentyCyan);
   color: var(--sprentyBlue);
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-rating p,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-rating p,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-rating p {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-topDest .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-midDest .sprenty-rating p,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-botDest .sprenty-rating p {
   width: 100%;
   height: 100%;
   display: flex;
@@ -444,12 +445,12 @@
   justify-self: unset;
   justify-content: center;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest .sprenty-name,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest .sprenty-name,
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest .sprenty-name {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-topDest .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-midDest .sprenty-name,
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-botDest .sprenty-name {
   width: 100%;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-topDest {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-topDest {
   background: url("../images/destinations/mziuri.webp") center no-repeat;
   background-size: cover;
   height: 100%;
@@ -457,7 +458,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-midDest {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-midDest {
   background: url("../images/destinations/imedi.webp") center no-repeat;
   background-size: cover;
   height: 100%;
@@ -465,7 +466,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsWrap .sprenty-rightSec .sprenty-botDest {
+.sprenty-destinations .sprenty-destinationsWrap .sprenty-destinationsList .sprenty-destinationsGrid .sprenty-rightSec .sprenty-botDest {
   background: url("../images/destinations/school.webp") center no-repeat;
   background-size: cover;
   height: 100%;
@@ -474,42 +475,122 @@
   justify-content: space-between;
 }
 
+.sprenty-trending {
+  background-color: #f7f7f7;
+}
+.sprenty-trending .sprenty-trendingWrap {
+  padding: 70px 0;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-header {
+  padding-bottom: 45px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-header h2 {
+  color: var(--textColor) !important;
+  font-size: 36px !important;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-header p span {
+  color: var(--sprentyBlue);
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue {
+  background-color: #ffffff;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap {
+  height: 100%;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-batumi {
+  background: url("../images/trendingVenues/batumi.webp") center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 140px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-dinamoTbilisi {
+  background: url("../images/trendingVenues/dinamo.webp") center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 140px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-mziuri {
+  background: url("../images/trendingVenues/mziuri.webp") center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 140px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-mtatsminda {
+  background: url("../images/trendingVenues/mtatsminda.webp") center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 140px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-school {
+  background: url("../images/trendingVenues/school.webp") center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 140px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-dinamoA {
+  background: url("../images/trendingVenues/dinamoA.webp") center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 140px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-venueInfo {
+  height: 100%;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-venueInfo .sprenty-venueRating span svg {
+  color: var(--starColor);
+  font-size: 13px;
+  margin-right: 5px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-venueInfo .sprenty-venueRating span {
+  color: var(--textColor);
+  font-size: 14px;
+  margin: 0;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-venueInfo .sprenty-venueRating p {
+  font-size: 14px;
+  color: gray;
+  margin: 0 0 0 3px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-venuePrice span {
+  color: gray;
+  font-size: 14px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-booknow button {
+  border: none;
+  background-color: var(--sprentyBlue);
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1400px) {
   .sprenty-barWrap {
     width: 100% !important;
   }
-
   .sprenty-locBar {
     flex-direction: column;
   }
-
   .sprenty-currentLoc {
     width: 100% !important;
     margin-bottom: 15px;
   }
-
   .sprenty-connector {
     display: none !important;
   }
-
   .sprenty-searchSec {
     display: flex !important;
     justify-content: center !important;
     align-items: center;
     width: 100%;
   }
-
   .sprenty-searchSecWrap {
     margin: 0 0 1.5rem 0 !important;
   }
-
   .sprenty-destinationLoc,
 .sprenty-checkIn,
 .sprenty-checkOut {
     width: 32% !important;
   }
-
-  .sprenty-districts {
+  .sprenty-districtsWrap {
     margin-top: 320px;
   }
 }
@@ -524,28 +605,22 @@
     width: 100% !important;
     margin-bottom: 15px;
   }
-
   .sprenty-checkIn,
 .sprenty-checkOut {
     width: 49% !important;
   }
-
   .sprenty-locPicker {
     justify-content: space-between !important;
   }
-
   .sprenty-header {
     padding: 0 5% !important;
   }
-
-  .sprenty-destinationsWrap .sprenty-header {
+  .sprenty-destinationsGrid .sprenty-header {
     padding: 0 !important;
   }
-
-  .sprenty-districts {
-    margin-top: 380px;
+  .sprenty-districtsWrap {
+    padding-top: 380px;
   }
-
   .sprenty-topDest,
 .sprenty-midDest,
 .sprenty-botDest {
@@ -559,47 +634,55 @@
     flex-direction: column;
     align-items: center;
   }
-
   .owl-nav.disabled {
     display: flex !important;
+  }
+  .sprenty-venuePrice h5 {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 576px) {
   .sprenty-locBar {
     padding: 0 1rem !important;
   }
-
   .sprenty-locPicker div div {
     margin: 0 !important;
   }
   .sprenty-locPicker div div h5 {
     font-size: 1.1rem;
   }
-
-  .sprenty-districts {
-    margin-top: 400px;
+  .sprenty-districtsWrap {
+    padding-top: 400px;
   }
-
   .sprenty-listWrap {
     box-shadow: none !important;
   }
-
   .sprenty-destinationsWrap .sprenty-header {
     text-align: center;
   }
 }
 @media screen and (max-width: 575px) {
-  .sprenty-topDest, .sprenty-midDest, .sprenty-botDest {
+  .sprenty-topDest,
+.sprenty-midDest,
+.sprenty-botDest {
     width: 70% !important;
   }
-
-  .sprenty-botHalfLeft, .sprenty-botHalfRight {
+  .sprenty-botHalfLeft,
+.sprenty-botHalfRight {
     width: 70% !important;
   }
-
   .sprenty-innerTop {
     width: 70%;
     margin: 0 auto;
+  }
+  .sprenty-venueWrap {
+    flex-direction: column;
+  }
+  .sprenty-venueInfo {
+    margin: 0 !important;
+    align-items: center;
+    margin-top: 1rem !important;
+    justify-content: space-around !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -611,15 +694,12 @@
   .sprenty-googleText {
     display: none;
   }
-
   .sprenty-methodGoogle {
     width: 60px !important;
   }
-
   .sprenty-barSports {
     justify-content: space-around;
   }
-
   .sprenty-basketball {
     padding: 0 !important;
   }

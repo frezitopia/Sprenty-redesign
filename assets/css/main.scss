@@ -5,6 +5,7 @@
   --sprentyDarkBlue: #11b9c5;
   --sprentyCyan: #e7fdff;
   --textColor: #525252;
+  --starColor: #fed166;
 }
 
 // Bootstrap Edit
@@ -356,99 +357,96 @@
     }
   }
 
-  .sprenty-districts {
-    margin-top: 160px;
+  .sprenty-districtsWrap {
+    padding-top: 140px;
+    .sprenty-header {
+      text-align: center;
+      padding: 0 15%;
 
-    .sprenty-districtsWrap {
-      .sprenty-header {
-        text-align: center;
-        padding: 0 15%;
+      p,
+      h1 {
+        margin: 0;
+      }
 
-        p,
-        h1 {
-          margin: 0;
-        }
-
-        p {
-          color: var(--textColor);
-        }
+      p {
+        color: var(--textColor);
       }
     }
+  }
 
-    .sprenty-districtsList {
-      display: flex;
+  .sprenty-districtsList {
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+    margin-top: 40px;
+    .sprenty-districtWrap {
+      position: relative;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
       justify-content: center;
-      padding: 0 !important;
-      margin-top: 40px;
-      .sprenty-districtWrap {
-        position: relative;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        justify-content: center;
-        .item {
-          .itemInner {
-            margin-top: 25px;
-            .sprenty-listWrap {
-              &:hover {
-                box-shadow: 0px 0px 35px -3px rgb(0, 0, 0, 0.1);
-                transition: all 0.2s ease-in-out;
-              }
-              .sprenty-card {
-                .sprenty-cardInner {
-                  padding: 1.5rem 1.3rem;
-                  .sprenty-cardIMG {
-                    width: 60px;
-                    height: 60px;
-                  }
-                  .sprenty-saburtalo {
-                    background: url("../images/districts/saburtalo.webp") center
-                      no-repeat;
-                    background-size: cover;
-                  }
-                  .sprenty-vake {
-                    background: url("../images/districts/vake.webp") center
+      .item {
+        .itemInner {
+          margin-top: 25px;
+          .sprenty-listWrap {
+            &:hover {
+              box-shadow: 0px 0px 35px -3px rgb(0, 0, 0, 0.1);
+              transition: all 0.2s ease-in-out;
+            }
+            .sprenty-card {
+              .sprenty-cardInner {
+                padding: 1.5rem 1.3rem;
+                .sprenty-cardIMG {
+                  width: 60px;
+                  height: 60px;
+                }
+                .sprenty-saburtalo {
+                  background: url("../images/districts/saburtalo.webp") center
                     no-repeat;
                   background-size: cover;
-                  }
-                  .sprenty-gldani {
-                    background: url("../images/districts/gldani.webp") center
+                }
+                .sprenty-vake {
+                  background: url("../images/districts/vake.webp") center
                     no-repeat;
                   background-size: cover;
-                  }
-                  .sprenty-digomi {
-                    background: url("../images/districts/digomi.webp") center
+                }
+                .sprenty-gldani {
+                  background: url("../images/districts/gldani.webp") center
                     no-repeat;
                   background-size: cover;
-                  }
-                  .sprenty-minsk {
-                    background: url("../images/districts/minsk.webp") center
+                }
+                .sprenty-digomi {
+                  background: url("../images/districts/digomi.webp") center
                     no-repeat;
                   background-size: cover;
-                  }
-                  .sprenty-chugureti {
-                    background: url("../images/districts/chugureti.webp") center
+                }
+                .sprenty-minsk {
+                  background: url("../images/districts/minsk.webp") center
                     no-repeat;
                   background-size: cover;
-                  }
-                  .sprenty-lisi {
-                    background: url("../images/districts/lisi.webp") center
+                }
+                .sprenty-chugureti {
+                  background: url("../images/districts/chugureti.webp") center
                     no-repeat;
                   background-size: cover;
-                  }
-                  .sprenty-samgori {
-                    background: url("../images/districts/samgori.webp") center
+                }
+                .sprenty-lisi {
+                  background: url("../images/districts/lisi.webp") center
                     no-repeat;
                   background-size: cover;
-                  }
+                }
+                .sprenty-samgori {
+                  background: url("../images/districts/samgori.webp") center
+                    no-repeat;
+                  background-size: cover;
+                }
 
-                  .sprenty-cardName h5,
-                  .sprenty-locCount p {
-                    margin: 0 !important;
-                  }
-                  .sprenty-locCount p {
-                    font-size: 14px;
-                    color: var(--textColor);
-                  }
+                .sprenty-cardName h5,
+                .sprenty-locCount p {
+                  margin: 0 !important;
+                }
+                .sprenty-locCount p {
+                  font-size: 14px;
+                  color: var(--textColor);
                 }
               }
             }
@@ -460,8 +458,8 @@
 }
 
 .sprenty-destinations {
-  margin-top: 75px;
   .sprenty-destinationsWrap {
+    padding-top: 55px;
     .sprenty-header {
       p {
         color: var(--textColor);
@@ -472,7 +470,7 @@
       }
     }
     .sprenty-destinationsList {
-      .sprenty-destinationsWrap {
+      .sprenty-destinationsGrid {
         .sprenty-leftSec {
           .sprenty-innerTop {
             background: url("../images/destinations/lisi.webp") center no-repeat;
@@ -585,6 +583,119 @@
   }
 }
 
+.sprenty-trending {
+  background-color: #f7f7f7;
+  .sprenty-trendingWrap {
+    padding: 70px 0;
+    .sprenty-header {
+      padding-bottom: 45px;
+
+      h2 {
+        color: var(--textColor) !important;
+        font-size: 36px !important;
+      }
+
+      p span {
+        color: var(--sprentyBlue);
+      }
+    }
+    .sprenty-trendingList {
+      .sprenty-trendingListWrap {
+        .sprenty-trendingVenue {
+          background-color: #ffffff;
+          // width: 47%;
+          .sprenty-venueWrap {
+            height: 100%;
+            .sprenty-batumi {
+              background: url("../images/trendingVenues/batumi.webp") center
+                no-repeat;
+              background-size: cover;
+              width: 150px;
+              height: 140px;
+            }
+            .sprenty-dinamoTbilisi {
+              background: url("../images/trendingVenues/dinamo.webp") center
+                no-repeat;
+              background-size: cover;
+              width: 150px;
+              height: 140px;
+            }
+            .sprenty-mziuri {
+              background: url("../images/trendingVenues/mziuri.webp") center
+                no-repeat;
+              background-size: cover;
+              width: 150px;
+              height: 140px;
+            }
+            .sprenty-mtatsminda {
+              background: url("../images/trendingVenues/mtatsminda.webp") center
+                no-repeat;
+              background-size: cover;
+              width: 150px;
+              height: 140px;
+            }
+            .sprenty-school {
+              background: url("../images/trendingVenues/school.webp") center
+                no-repeat;
+              background-size: cover;
+              width: 150px;
+              height: 140px;
+            }
+            .sprenty-dinamoA {
+              background: url("../images/trendingVenues/dinamoA.webp") center
+                no-repeat;
+              background-size: cover;
+              width: 150px;
+              height: 140px;
+            }
+            .sprenty-venueInfo {
+              height: 100%;
+              // margin-left: 1.5rem;
+              .sprenty-venueName {
+              }
+              .sprenty-venueRating {
+                span svg {
+                  color: var(--starColor);
+                  font-size: 13px;
+                  margin-right: 5px;
+                }
+                span {
+                  color: var(--textColor);
+                  font-size: 14px;
+                  margin: 0;
+                }
+                p {
+                  font-size: 14px;
+                  color: gray;
+                  margin: 0 0 0 3px;
+                }
+              }
+            }
+            .sprenty-venuePrice {
+              span {
+                color: gray;
+                font-size: 14px;
+              }
+            }
+            .sprenty-booknow {
+              button {
+                border: none;
+                background-color: var(--sprentyBlue);
+                padding: 5px 10px;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sprenty-explore {
+  
+}
+
 // Responsive for home.html
 
 @media screen and (max-width: 1400px) {
@@ -622,7 +733,7 @@
     width: 32% !important;
   }
 
-  .sprenty-districts {
+  .sprenty-districtsWrap {
     margin-top: 320px;
   }
 }
@@ -653,18 +764,18 @@
     padding: 0 5% !important;
   }
 
-  .sprenty-destinationsWrap .sprenty-header {
+  .sprenty-destinationsGrid .sprenty-header {
     padding: 0 !important;
   }
 
-  .sprenty-districts {
-    margin-top: 380px;
+  .sprenty-districtsWrap {
+    padding-top: 380px;
   }
 
   .sprenty-topDest,
   .sprenty-midDest,
   .sprenty-botDest {
-    width: 32%!important;
+    width: 32% !important;
     height: 150px !important;
   }
 }
@@ -678,6 +789,10 @@
 
   .owl-nav.disabled {
     display: flex !important;
+  }
+
+  .sprenty-venuePrice h5 {
+    font-size: 1rem;
   }
 }
 
@@ -694,34 +809,44 @@
     }
   }
 
-  .sprenty-districts {
-    margin-top: 400px;
+  .sprenty-districtsWrap {
+    padding-top: 400px;
   }
 
   .sprenty-listWrap {
     box-shadow: none !important;
   }
 
-
-
   .sprenty-destinationsWrap .sprenty-header {
     text-align: center;
   }
-
-
 }
 
 @media screen and (max-width: 575px) {
-  .sprenty-topDest, .sprenty-midDest, .sprenty-botDest {
-    width: 70%!important;
+  .sprenty-topDest,
+  .sprenty-midDest,
+  .sprenty-botDest {
+    width: 70% !important;
   }
-  .sprenty-botHalfLeft, .sprenty-botHalfRight {
-    width: 70%!important;
+  .sprenty-botHalfLeft,
+  .sprenty-botHalfRight {
+    width: 70% !important;
   }
 
-    .sprenty-innerTop {
+  .sprenty-innerTop {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .sprenty-venueWrap {
+    flex-direction: column;
+  }
+
+  .sprenty-venueInfo {
+    margin: 0 !important;
+    align-items: center;
+    margin-top: 1rem!important;
+    justify-content: space-around!important;
   }
 }
 
