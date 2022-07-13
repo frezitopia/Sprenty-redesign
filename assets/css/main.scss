@@ -237,7 +237,6 @@
           height: 100%;
           box-shadow: 0px -25px 50px 32px rgba(0, 0, 0, 0.1);
           z-index: -1;
-          // height: 50px;
         }
 
         .sprenty-locBar {
@@ -651,8 +650,6 @@
             .sprenty-venueInfo {
               height: 100%;
               // margin-left: 1.5rem;
-              .sprenty-venueName {
-              }
               .sprenty-venueRating {
                 span svg {
                   color: var(--starColor);
@@ -693,9 +690,92 @@
 }
 
 .sprenty-explore {
-  
-}
+  .sprenty-exploreWrap {
+    padding-top: 55px;
+    .sprenty-exploreHeader {
+      p,
+      h1 {
+        margin: 0;
+      }
 
+      p {
+        color: var(--textColor);
+      }
+    }
+    .sprenty-owlTwo {
+      .owl-stage-outer {
+        padding-top: 2.5rem !important;
+      }
+      .owltwo-item {
+        &:hover {
+          box-shadow: 0px 0px 35px 2px rgb(0, 0, 0, 0.1);
+          transition: all 0.2s ease-in-out;
+          border-radius: 8%;
+        }
+        .owltwo-card {
+          height: 380px;
+          border-radius: 8%;
+
+          .imgOne,
+          .owltwo-img {
+            background: url("../images/trendingVenues/dinamoA.webp") center
+              no-repeat;
+            background-size: cover;
+            height: 100%;
+            border-radius: 8% 8% 0 0;
+
+            .owltwo-rating {
+              .owltwo-circle {
+                width: 40px;
+                height: 40px;
+                background-color: var(--sprentyCyan);
+                color: var(--textColor);
+
+                svg {
+                  font-size: 12px;
+                  color: var(--starColor);
+                }
+              }
+              .owltwo-pill {
+                height: 40px;
+                width: 55px;
+                background-color: var(--sprentyCyan);
+              }
+            }
+          }
+          .imgTwo {
+            background: url("../images/trendingVenues/mtatsminda.webp") center
+              no-repeat;
+            background-size: cover;
+            height: 100%;
+            border-radius: 8% 8% 0 0;
+          }
+          .imgThree {
+            background: url("../images/trendingVenues/mziuri.webp") center
+              no-repeat;
+            background-size: cover;
+            height: 100%;
+            border-radius: 8% 8% 0 0;
+          }
+          .imgFour {
+            background: url("../images/trendingVenues/school.webp") center
+              no-repeat;
+            background-size: cover;
+            height: 100%;
+            border-radius: 8% 8% 0 0;
+          }
+          .owltwo-txt {
+            .owltwo-name {
+            }
+          }
+          .owltwo-location {
+            color: var(--textColor);
+          }
+        }
+      }
+    }
+  }
+}
 // Responsive for home.html
 
 @media screen and (max-width: 1400px) {
@@ -734,7 +814,7 @@
   }
 
   .sprenty-districtsWrap {
-    margin-top: 320px;
+    padding-top: 320px;
   }
 }
 
@@ -845,8 +925,8 @@
   .sprenty-venueInfo {
     margin: 0 !important;
     align-items: center;
-    margin-top: 1rem!important;
-    justify-content: space-around!important;
+    margin-top: 1rem !important;
+    justify-content: space-around !important;
   }
 }
 
@@ -888,7 +968,7 @@
   padding: 0 !important;
 }
 
-.owl-nav {
+.sprenty-districts .owl-nav {
   position: absolute !important;
   display: flex !important;
   justify-content: center;
@@ -925,3 +1005,29 @@
 .owl-next {
   color: var(--sprentyDarkBlue) !important;
 }
+
+.sprenty-explore .owl-nav {
+  position: absolute !important;
+  display: flex !important;
+  justify-content: center;
+  top: -14%;
+  right: 0;
+  button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 30px !important;
+    width: 30px;
+    background-color: var(--sprentyCyan)!important;
+    border: 50%!important;
+    }
+    [class*=owl-]:hover {
+      background-color: var(--sprentyDarkBlue)!important;
+
+      span {
+        color: #ffffff!important;
+      }
+    }
+  }
+
+// owl

@@ -562,6 +562,75 @@
   color: #ffffff;
 }
 
+.sprenty-explore .sprenty-exploreWrap {
+  padding-top: 55px;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-exploreHeader p,
+.sprenty-explore .sprenty-exploreWrap .sprenty-exploreHeader h1 {
+  margin: 0;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-exploreHeader p {
+  color: var(--textColor);
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owl-stage-outer {
+  padding-top: 2.5rem !important;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item:hover {
+  box-shadow: 0px 0px 35px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  border-radius: 8%;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card {
+  height: 380px;
+  border-radius: 8%;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .imgOne,
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .owltwo-img {
+  background: url("../images/trendingVenues/dinamoA.webp") center no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 8% 8% 0 0;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .imgOne .owltwo-rating .owltwo-circle,
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .owltwo-img .owltwo-rating .owltwo-circle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--sprentyCyan);
+  color: var(--textColor);
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .imgOne .owltwo-rating .owltwo-circle svg,
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .owltwo-img .owltwo-rating .owltwo-circle svg {
+  font-size: 12px;
+  color: var(--starColor);
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .imgOne .owltwo-rating .owltwo-pill,
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .owltwo-img .owltwo-rating .owltwo-pill {
+  height: 40px;
+  width: 55px;
+  background-color: var(--sprentyCyan);
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .imgTwo {
+  background: url("../images/trendingVenues/mtatsminda.webp") center no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 8% 8% 0 0;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .imgThree {
+  background: url("../images/trendingVenues/mziuri.webp") center no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 8% 8% 0 0;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .imgFour {
+  background: url("../images/trendingVenues/school.webp") center no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 8% 8% 0 0;
+}
+.sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .owltwo-location {
+  color: var(--textColor);
+}
+
 @media screen and (max-width: 1400px) {
   .sprenty-barWrap {
     width: 100% !important;
@@ -591,7 +660,7 @@
     width: 32% !important;
   }
   .sprenty-districtsWrap {
-    margin-top: 320px;
+    padding-top: 320px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -708,23 +777,23 @@
   padding: 0 !important;
 }
 
-.owl-nav {
+.sprenty-districts .owl-nav {
   position: absolute !important;
   display: flex !important;
   justify-content: center;
   display: none !important;
 }
-.owl-nav button {
+.sprenty-districts .owl-nav button {
   margin: 0 10px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   height: 30px !important;
 }
-.owl-nav button:hover {
+.sprenty-districts .owl-nav button:hover {
   background-color: none !important;
 }
-.owl-nav button span {
+.sprenty-districts .owl-nav button span {
   font-size: 55px;
   display: flex !important;
   height: 30px !important;
@@ -743,4 +812,27 @@
 .owl-prev,
 .owl-next {
   color: var(--sprentyDarkBlue) !important;
+}
+
+.sprenty-explore .owl-nav {
+  position: absolute !important;
+  display: flex !important;
+  justify-content: center;
+  top: -14%;
+  right: 0;
+}
+.sprenty-explore .owl-nav button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 30px !important;
+  width: 30px;
+  background-color: var(--sprentyCyan) !important;
+  border: 50% !important;
+}
+.sprenty-explore .owl-nav [class*=owl-]:hover {
+  background-color: var(--sprentyDarkBlue) !important;
+}
+.sprenty-explore .owl-nav [class*=owl-]:hover span {
+  color: #ffffff !important;
 }/*# sourceMappingURL=main.css.map */
