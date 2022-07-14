@@ -30,6 +30,9 @@ $('.sprenty-owlTwo').owlCarousel({
         0:{
             items:1
         },
+        400:{
+            items:2 
+        },
         600:{
             items:3
         },
@@ -38,3 +41,8 @@ $('.sprenty-owlTwo').owlCarousel({
         }
     }
 })
+
+if($(document).width() <=1200)
+     $('.break').css('display','none');
+else 
+     $('.break').css('display','block');

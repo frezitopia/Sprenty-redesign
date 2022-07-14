@@ -162,16 +162,20 @@
       .sprenty-language img {
         width: 35px !important;
       }
-
-      .sprenty-navNotification {
-        font-size: 25px;
-        color: #83868b;
-        cursor: pointer;
-      }
-
-      .sprenty-verticalLine {
-        border-left: 3px solid #eef1f6;
-        height: 40px !important;
+      .sprenty-menuItems {
+        .sprenty-navNotification {
+          font-size: 25px;
+          color: #83868b;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          height: 35px;
+          align-items: center;
+        }
+        .sprenty-verticalLine {
+          border-left: 3px solid #eef1f6;
+          height: 40px !important;
+        }
       }
 
       .sprenty-dropdown {
@@ -690,6 +694,7 @@
 }
 
 .sprenty-explore {
+  padding-bottom: 250px;
   .sprenty-exploreWrap {
     padding-top: 55px;
     .sprenty-exploreHeader {
@@ -774,6 +779,68 @@
         }
       }
     }
+    .sprenty-offers {
+      user-select: none;
+      height: 250px;
+      background-color: var(--sprentyDarkBlue);
+      border-radius: 15px;
+      bottom: -15%;
+  
+      &::after{
+        content: "";
+        background: url("../images/pattern.png") repeat center;
+        background-size: contain;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        border-radius: 15px;
+      }
+      .offers-inner {
+        height: 100%;
+        .offers-text {
+          z-index: 2;
+        }
+        .offers-input {
+          z-index: 2;
+          .offers-inputWrap {
+            input {
+              outline: none;
+              height: 60px;
+              width: 80%;
+              
+            }
+            button {
+              width: 110px;
+              height: 45px;
+              right: 21%;
+              background-color: #23262F;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sprenty-footer {
+  background-color: #f7f7f7;
+  padding-top: 250px;
+  .wrap-inner {
+    .company-desc, .footer-services, .footer-support, .footer-business {
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li a {
+          text-decoration: none;
+          color: var(--textColor);
+        }
+      }
+      
+    }
   }
 }
 // Responsive for home.html
@@ -816,6 +883,10 @@
   .sprenty-districtsWrap {
     padding-top: 320px;
   }
+
+  .sprenty-locSearch::after {
+    box-shadow: 0px -93px 50px 120px rgb(0 0 0 / 10%)!important;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -840,6 +911,10 @@
     justify-content: space-between !important;
   }
 
+  .sprenty-locSearch::after {
+    box-shadow: 0px -93px 50px 120px rgb(0 0 0 / 10%)!important;
+  }
+
   .sprenty-header {
     padding: 0 5% !important;
   }
@@ -852,11 +927,41 @@
     padding-top: 380px;
   }
 
+  .offers-inputWrap {
+    transform: translateX(10%);
+  }
+
+  .owltwo-card {
+    height: 280px!important;
+  }
+
+  .sprenty-footer {
+    padding-top: 140px;
+  }
+
+  .sprenty-explore {
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .sprenty-topDest,
   .sprenty-midDest,
   .sprenty-botDest {
     width: 32% !important;
     height: 150px !important;
+  }
+  .sprenty-verticalLine {
+    display: none;
+  }
+  .sprenty-navNotification {
+    margin: 0!important;
+  }
+  .sprenty-dropdown {
+    margin: 0!important;
+  }
+  .sprenty-menuItems {
+    display: flex;
   }
 }
 
@@ -927,6 +1032,10 @@
     align-items: center;
     margin-top: 1rem !important;
     justify-content: space-around !important;
+  }
+
+  .offers-inputWrap button {
+    width: 90px!important;
   }
 }
 
@@ -1018,16 +1127,16 @@
     justify-content: center !important;
     height: 30px !important;
     width: 30px;
-    background-color: var(--sprentyCyan)!important;
-    border: 50%!important;
-    }
-    [class*=owl-]:hover {
-      background-color: var(--sprentyDarkBlue)!important;
+    background-color: var(--sprentyCyan) !important;
+    border: 50% !important;
+  }
+  [class*="owl-"]:hover {
+    background-color: var(--sprentyDarkBlue) !important;
 
-      span {
-        color: #ffffff!important;
-      }
+    span {
+      color: #ffffff !important;
     }
   }
+}
 
 // owl
