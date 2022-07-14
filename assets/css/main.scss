@@ -225,11 +225,11 @@
 
         .sprenty-overlayTexts {
           h1 {
-            font-size: 3.5rem;
+            font-size: 4vw;
           }
 
           h3 {
-            font-size: 2rem;
+            font-size: 2vw;
           }
         }
       }
@@ -244,7 +244,6 @@
         }
 
         .sprenty-locBar {
-          padding: 0 3rem;
           background-color: white;
           border-radius: 14px;
 
@@ -603,6 +602,7 @@
       }
     }
     .sprenty-trendingList {
+      margin-left: 0!important;
       .sprenty-trendingListWrap {
         .sprenty-trendingVenue {
           background-color: #ffffff;
@@ -782,9 +782,12 @@
     .sprenty-offers {
       user-select: none;
       height: 250px;
-      background-color: var(--sprentyDarkBlue);
-      border-radius: 15px;
       bottom: -15%;
+      
+      .offers-inner {
+        height: 100%;
+        border-radius: 15px;
+        background-color: var(--sprentyDarkBlue);
   
       &::after{
         content: "";
@@ -798,8 +801,6 @@
         position: absolute;
         border-radius: 15px;
       }
-      .offers-inner {
-        height: 100%;
         .offers-text {
           z-index: 2;
         }
@@ -911,6 +912,16 @@
     justify-content: space-between !important;
   }
 
+  .sprenty-overlayTexts {
+    h1 {
+      font-size: 3rem!important;
+    }
+
+    h3 {
+      font-size: 1.5rem!important;
+    }
+  }
+
   .sprenty-locSearch::after {
     box-shadow: 0px -93px 50px 120px rgb(0 0 0 / 10%)!important;
   }
@@ -928,7 +939,11 @@
   }
 
   .offers-inputWrap {
-    transform: translateX(10%);
+    justify-content: center!important;
+  }
+
+  .offers-inputWrap button {
+    right: 11%!important;
   }
 
   .owltwo-card {
@@ -942,6 +957,7 @@
   .sprenty-explore {
     padding-bottom: 200px;
   }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -995,11 +1011,21 @@
   }
 
   .sprenty-districtsWrap {
-    padding-top: 400px;
+    padding-top: 250px;
   }
 
   .sprenty-listWrap {
     box-shadow: none !important;
+  }
+
+  .sprenty-overlayTexts {
+    h1 {
+      font-size: 3rem!important;
+    }
+
+    h3 {
+      font-size: 1.5rem!important;
+    }
   }
 
   .sprenty-destinationsWrap .sprenty-header {
@@ -1036,6 +1062,15 @@
 
   .offers-inputWrap button {
     width: 90px!important;
+  }
+  .sprenty-overlayIMG {
+    // height: 700px!important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sprenty-districtsWrap {
+    padding-top: 300px!important;
   }
 }
 
