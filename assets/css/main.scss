@@ -20,8 +20,7 @@
   padding: 0;
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
-  // user-select: none;
-
+  
   .sprenty-mainContainter {
     padding: 0 !important;
     margin: 0 !important;
@@ -770,8 +769,6 @@
             border-radius: 8% 8% 0 0;
           }
           .owltwo-txt {
-            .owltwo-name {
-            }
           }
           .owltwo-location {
             color: var(--textColor);
@@ -1062,9 +1059,6 @@
 
   .offers-inputWrap button {
     width: 90px!important;
-  }
-  .sprenty-overlayIMG {
-    // height: 700px!important;
   }
 }
 
