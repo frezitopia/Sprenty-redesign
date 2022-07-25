@@ -44,7 +44,6 @@
         .sprenty-modalHeading {
           h2 {
             color: var(--textColor) !important;
-            font-size: 36px !important;
           }
 
           p span {
@@ -601,7 +600,7 @@
       }
     }
     .sprenty-trendingList {
-      margin-left: 0!important;
+      margin-left: 0 !important;
       .sprenty-trendingListWrap {
         .sprenty-trendingVenue {
           background-color: #ffffff;
@@ -682,7 +681,11 @@
                 border: none;
                 background-color: var(--sprentyBlue);
                 padding: 5px 10px;
-                color: #ffffff;
+
+                a {
+                  color: #ffffff;
+                  text-decoration: none;
+                }
               }
             }
           }
@@ -774,47 +777,46 @@
         }
       }
     }
-    .sprenty-offers {
-      user-select: none;
-      height: 250px;
-      bottom: -15%;
-      
-      .offers-inner {
-        height: 100%;
-        border-radius: 15px;
-        background-color: var(--sprentyDarkBlue);
-  
-      &::after{
-        content: "";
-        background: url("../images/pattern.png") repeat center;
-        background-size: contain;
-        opacity: 0.3;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        border-radius: 15px;
-      }
-        .offers-text {
-          z-index: 2;
+  }
+}
+.sprenty-offers {
+  user-select: none;
+  height: 250px;
+  bottom: -15%;
+
+  .offers-inner {
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--sprentyDarkBlue);
+
+    &::after {
+      content: "";
+      background: url("../images/pattern.png") repeat center;
+      background-size: contain;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      border-radius: 15px;
+    }
+    .offers-text {
+      z-index: 2;
+    }
+    .offers-input {
+      z-index: 2;
+      .offers-inputWrap {
+        input {
+          outline: none;
+          height: 60px;
+          width: 80%;
         }
-        .offers-input {
-          z-index: 2;
-          .offers-inputWrap {
-            input {
-              outline: none;
-              height: 60px;
-              width: 80%;
-              
-            }
-            button {
-              width: 110px;
-              height: 45px;
-              right: 21%;
-              background-color: #23262F;
-            }
-          }
+        button {
+          width: 110px;
+          height: 45px;
+          right: 21%;
+          background-color: #23262f;
         }
       }
     }
@@ -825,7 +827,10 @@
   background-color: #f7f7f7;
   padding-top: 250px;
   .wrap-inner {
-    .company-desc, .footer-services, .footer-support, .footer-business {
+    .company-desc,
+    .footer-services,
+    .footer-support,
+    .footer-business {
       ul {
         list-style-type: none;
         padding: 0;
@@ -835,7 +840,6 @@
           color: var(--textColor);
         }
       }
-      
     }
   }
 }
@@ -881,7 +885,7 @@
   }
 
   .sprenty-locSearch::after {
-    box-shadow: 0px -93px 50px 120px rgb(0 0 0 / 10%)!important;
+    box-shadow: 0px -93px 50px 120px rgb(0 0 0 / 10%) !important;
   }
 }
 
@@ -909,16 +913,16 @@
 
   .sprenty-overlayTexts {
     h1 {
-      font-size: 3rem!important;
+      font-size: 3rem !important;
     }
 
     h3 {
-      font-size: 1.5rem!important;
+      font-size: 1.5rem !important;
     }
   }
 
   .sprenty-locSearch::after {
-    box-shadow: 0px -93px 50px 120px rgb(0 0 0 / 10%)!important;
+    box-shadow: 0px -93px 50px 120px rgb(0 0 0 / 10%) !important;
   }
 
   .sprenty-header {
@@ -934,25 +938,30 @@
   }
 
   .offers-inputWrap {
-    justify-content: center!important;
+    justify-content: center !important;
   }
 
   .offers-inputWrap button {
-    right: 11%!important;
+    right: 11% !important;
   }
 
   .owltwo-card {
-    height: 280px!important;
+    height: 280px !important;
   }
 
   .sprenty-footer {
     padding-top: 140px;
   }
 
-  .sprenty-explore {
-    padding-bottom: 200px;
+  .sprenty-explore, .checkout-wrap {
+    padding-bottom: 200px!important;
   }
-
+  .offers-checkout {
+    top: -170px!important;
+  }
+  .card-details {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -966,10 +975,10 @@
     display: none;
   }
   .sprenty-navNotification {
-    margin: 0!important;
+    margin: 0 !important;
   }
   .sprenty-dropdown {
-    margin: 0!important;
+    margin: 0 !important;
   }
   .sprenty-menuItems {
     display: flex;
@@ -1006,7 +1015,7 @@
   }
 
   .sprenty-districtsWrap {
-    padding-top: 250px;
+    padding-top: 400px!important;
   }
 
   .sprenty-listWrap {
@@ -1015,17 +1024,19 @@
 
   .sprenty-overlayTexts {
     h1 {
-      font-size: 3rem!important;
+      font-size: 3rem !important;
     }
 
     h3 {
-      font-size: 1.5rem!important;
+      font-size: 1.5rem !important;
     }
   }
 
   .sprenty-destinationsWrap .sprenty-header {
     text-align: center;
   }
+
+
 }
 
 @media screen and (max-width: 575px) {
@@ -1056,114 +1067,271 @@
   }
 
   .offers-inputWrap button {
-    width: 90px!important;
+    width: 90px !important;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .sprenty-districtsWrap {
-    padding-top: 300px!important;
-  }
-}
 
 // The end of responsive for home.html
 
 // The end of Home page - In case CSS Files need to be separated
 
-// Responsive for Register.html & login.html
+// Checkout page
 
-@media screen and (max-width: 1200px) {
-  .sprenty-leftBanner {
-    display: none;
+.sprenty-checkout {
+  background-color: #fafafc;
+  .checkout-wrap {
+    padding-bottom: 250px;
+    .route-list {
+      a:hover {
+        color: var(--textColor) !important;
+      }
+    }
   }
+  .booking-left {
+    .left-header {
+      hr {
+        // width: 430px;
+        background-color: #f4f5f7;
+      }
+    }
+    .date-wrap {
+      background-color: #f4f4f6;
+    }
+    .left-payment {
+      .payment-methods {
+        .methods-wrap {
+          .p-methods {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            width: 100px;
+            height: 55px;
+          }
+          .pm-active {
+            background-color: #e4e7ec !important;
+            border-color: var(--sprentyBlue) !important;
+          }
+          .methods-checkmark {
+            bottom: 75%;
+            left: 89%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            span {
+              font-size: 14px;
+              color: #ffffff;
+              background-color: var(--sprentyBlue);
+            }
+          }
+        }
+      }
+      hr {
+        // width: 630px;
+        background-color: #f4f5f7;
+      }
+    }
+    .payment-card {
+      .card-outline {
+        .card-new {
+          background-color: #bddba7 !important;
+        }
+        .card-wrap {
+          border-radius: 25px;
+          // width: 415px;
+          background-color: #cfd9fd;
+
+          .card-top {
+            .card-emv {
+              font-size: 34px;
+              color: #3b3e44;
+            }
+            .card-edit {
+              font-size: 24px;
+              color: var(--textColor);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .booking-right {
+    .right-wrap {
+      border-radius: 15px;
+      .sprenty-trip {
+        .trip-route {
+          span svg {
+            color: var(--sprentyBlue) !important;
+            font-size: 25px;
+          }
+        }
+        .trip-rating {
+          span svg {
+            color: var(--starColor);
+          }
+        }
+        .trip-image {
+          border-radius: 10px;
+          height: 180px;
+          background: url("../images/destinations/mziuri.webp") center no-repeat;
+          background-size: cover;
+        }
+        .trip-summary {
+          .final-price {
+            background-color: #F4F5F7;
+          }
+        }
+      }
+    }
+  }
+
+}
+.offers-checkout {
+  top: -130px!important;
 }
 
-@media screen and (max-width: 576px) {
-  .sprenty-googleText {
-    display: none;
+  .form-control {
+    background-color: #f4f5f7;
+    &:focus {
+      border-color: var(--sprentyBlue);
+      box-shadow: none;
+    }
+  }
+  .form-check-input:focus {
+    background-color: var(--sprentyBlue);
+    box-shadow: none;
+  }
+  .payment-form-button button {
+    color: #ffffff;
+    background-color: var(--sprentyDarkBlue);
   }
 
-  .sprenty-methodGoogle {
-    width: 60px !important;
+  .form-check-input:checked {
+    border-color: var(--sprentyDarkBlue);
+    background-color: var(--sprentyBlue);
   }
 
-  .sprenty-barSports {
-    justify-content: space-around;
+  .footer-checkout {
+    background-color: #f4f5f7 !important;
   }
 
-  .sprenty-basketball {
+  .footer-services, .footer-support, .footer-business {
+    ul li a:hover {
+      color: #8B8E93!important;
+    }
+  }
+  // Checkout page
+  // Responsive for Register.html & login.html
+
+  @media screen and (max-width: 1200px) {
+    .sprenty-leftBanner {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .sprenty-googleText {
+      display: none;
+    }
+
+    .sprenty-methodGoogle {
+      width: 60px !important;
+    }
+
+    .sprenty-barSports {
+      justify-content: space-around;
+    }
+
+    .sprenty-basketball {
+      padding: 0 !important;
+    }
+
+    .route-list {
+      display: none !important;
+    }
+
+    .left-header h1 {
+      margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: 323px) {
+    .methods-amex {
+      margin-top: 1rem !important;
+    }
+  }
+
+  // The end Responsive for Register.html & login.html
+
+  // owl
+
+  .owl-stage-outer {
     padding: 0 !important;
   }
-}
 
-// The end Responsive for Register.html & login.html
-
-// owl
-
-.owl-stage-outer {
-  padding: 0 !important;
-}
-
-.sprenty-districts .owl-nav {
-  position: absolute !important;
-  display: flex !important;
-  justify-content: center;
-  display: none !important;
-  button {
-    margin: 0 10px !important;
+  .sprenty-districts .owl-nav {
+    position: absolute !important;
     display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    height: 30px !important;
-
-    &:hover {
-      background-color: none !important;
-    }
-    span {
-      font-size: 55px;
+    justify-content: center;
+    display: none !important;
+    button {
+      margin: 0 10px !important;
       display: flex !important;
-      height: 30px !important;
       align-items: center !important;
+      justify-content: center !important;
+      height: 30px !important;
+
+      &:hover {
+        background-color: none !important;
+      }
+      span {
+        font-size: 55px;
+        display: flex !important;
+        height: 30px !important;
+        align-items: center !important;
+      }
     }
   }
-}
 
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background-color: unset !important;
-  color: unset;
-}
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: unset !important;
+    color: unset;
+  }
 
-.disabled span {
-  color: var(--sprentyBlue) !important;
-}
+  .disabled span {
+    color: var(--sprentyBlue) !important;
+  }
 
-.owl-prev,
-.owl-next {
-  color: var(--sprentyDarkBlue) !important;
-}
+  .owl-prev,
+  .owl-next {
+    color: var(--sprentyDarkBlue) !important;
+  }
 
-.sprenty-explore .owl-nav {
-  position: absolute !important;
-  display: flex !important;
-  justify-content: center;
-  top: -14%;
-  right: 0;
-  button {
+  .sprenty-explore .owl-nav {
+    position: absolute !important;
     display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    height: 30px !important;
-    width: 30px;
-    background-color: var(--sprentyCyan) !important;
-    border: 50% !important;
-  }
-  [class*="owl-"]:hover {
-    background-color: var(--sprentyDarkBlue) !important;
+    justify-content: center;
+    top: -14%;
+    right: 0;
+    button {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      height: 30px !important;
+      width: 30px;
+      background-color: var(--sprentyCyan) !important;
+      border: 50% !important;
+    }
+    [class*="owl-"]:hover {
+      background-color: var(--sprentyDarkBlue) !important;
 
-    span {
-      color: #ffffff !important;
+      span {
+        color: #ffffff !important;
+      }
     }
   }
-}
+
 
 // owl

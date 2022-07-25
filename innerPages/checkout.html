@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sprenty - Checkout</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="">
+    <nav class="container-fluid sprenty-navbar navbar navbar-expand-lg my-2">
+      <div class="sprenty-mainDiv container">
+        <a class="navbar-brand" href="#">
+          <img class="w-75" src="../assets/images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="sprenty-collapse collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div
+            class="sprenty-leftNav navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <div class="sprenty-menuItems d-flex">
+              <div class="sprenty-language">
+                <img src="../assets/images/usaIcon.webp" alt="" />
+              </div>
+              <div class="sprenty-navNotification ms-3">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <div class="sprenty-verticalLine ms-3 h-100"></div>
+            </div>
+            <div class="sprenty-dropdown dropdown ms-3">
+              <div
+                class="dropdown-toggle d-flex align-items-center"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="sprenty-profilePic">
+                  <img
+                    class="rounded-circle"
+                    src="../assets/images/profilePic.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="sprenty-profileName mx-3">
+                  <p>Henry</p>
+                </div>
+              </div>
+              <ul
+                class="sprenty-dropdown-menu dropdown-menu mt-2"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center justify-content-between"
+                    href="#"
+                    >Profile <i class="fa-solid fa-user"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center justify-content-between"
+                    href="#"
+                    >Bookings <i class="fa-solid fa-ticket"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center justify-content-between"
+                    href="#"
+                    >Settings <i class="fa-solid fa-gear"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center justify-content-between"
+                    href="../index.html"
+                    >Log out <i class="fa-solid fa-right-from-bracket"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sprenty-checkout">
+      <div class="checkout-wrap container">
+        <div class="route-list d-flex align-items-center py-5">
+          <a class="text-decoration-none text-black me-2" href="#">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a class="text-decoration-none text-black mx-2" href="#">Venu list</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a class="text-decoration-none text-black mx-2" href="#"
+            >Venue details</a
+          >
+          <i class="fa-solid fa-chevron-right"></i>
+          <a class="text-decoration-none text-secondary ms-2" href="#"
+            >Confirm and pay</a
+          >
+        </div>
+
+        <div class="sprenty-booking">
+          <div class="booking-wrap row flex-xl-row flex-column-reverse">
+            <div class="booking-left col-xl-8 col-12">
+                <div class="left-header">
+                    <h1 class="fw-bold mb-3">Confirm your Book</h1>
+                    <hr class="border">
+                </div>
+                <div class="left-tourInfo">
+                    <h3 class="fw-bold mb-3">Booking Date</h3>
+                    <div class="tourInfo-date ">
+                        <div class="date-wrap d-flex col-12 col-md-6 align-items-center p-3 rounded">
+                            <div class="col-9">
+                            <h6 class="mb-1 fw-bold">Date</h6>
+                            <p class="mb-0 mt-1 fw-semibold text-secondary">June 27 17:00 - 24:00 UTC</p>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <span class="cursor-pointer">
+                                    <i class="fa-regular fa-pen-to-square text-secondary "></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="date-wrap d-flex col-12 col-md-6 align-items-center mt-4 p-3 rounded">
+                            <div class="col-9">
+                            <h6 class="mb-1 fw-bold">Players</h6>
+                            <p class="mb-0 mt-1 fw-semibold text-secondary">8 Participants</p>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <span class="cursor-pointer">
+                                    <i class="fa-regular fa-pen-to-square text-secondary "></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-payment mt-5">
+                  <h3 class="fw-bold mb-3">Credit Cards</h3>
+                  <div class="payment-methods container">
+                  <div class="methods-wrap row justify-content-sm-between justify-content-around position-relative mt-4">
+                    <div class="p-methods col-sm-3 col-4 methods-mc border rounded pm-active position-relative">
+                      <div class="method-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADxklEQVRoge2X3WscVRTAf3dmd2M0MSbtdpuUgGTTpIlKA5X0Yzdb0WKpPoSoUIRSSUFNEUT0JQ/+ByJ9UWlAGiiiViGlVR/ysLRNdtN0rSLYWtJ0g1Dz1WSbr8bqOjvjQ5t2N27uzC1LTGF+MA/33nPuOeeeOXPPgIuLi4uLy0OMWD4Rae2tRjeOCIsXgdL/wad8LCCIaobWeeb0vqHshZwAIq291UIzfgEqVtU958xYpmdr36m915cmtJxl3TjC2nUeoFxomY+zJ3ICuPvarHGsvdkjbdnqWnnnZTyePfCoanstg5b0AKH0IHVGEn9mGoCbejm/eeoZ8G3nXFGIDPp9Hd2gJThIKPgjdf4R/KUpAKYW1nF1qoZYsplYcjv/ZJTdyS3i3W0/WDLhSDpOx+IxqjIT0k3HtQCflLxF3LeDyObzdISPU1U2KdUZm9vI0f6D9F3bYev0uZMv3/PbUQAaJm8vdrP/do/t5ktYCKLPPc+ePTHHOgAnfmqlK3YQ0/rPF/4e2QEsr4G8qDoPcOmpp5WdB9i/7RRvhr5wLG8bQCQdV3Ye4JnLv8KHf995hk0l3defPUm49oIjWWkAXsugY7FbyXhevjMgo6byTks3Xt2wlZOWfUt6gKrMuJLhKxX1NLz/u5JOPirLbhCqSXB2eJdUTpqBcPq8smGrUf1TuBKhYMJWRmqtzrimbLQxdhny1e56Ae/5lPbasiFpKyPNwDpzRsmglHnpFZOX9aU3bWUKl++73O4so7jkr4LsZZor3wVLSDMwrak3prOThWunUn+W28pIM3DVU0t1ZlTJaGX3H/kXmnR4TS3hQxNBWxlpBmJFO5UMSml0dOnn2h9ptpWRHkm/dyejWhWbzDHHRg2hk2rfSKBm2rFOPsbmAgw4CEB6LIbw0FXSrmTYY2VY6HlESScfn/a1O2qvbfPa59vFieJXlIzXzibv90FR+3ZgOV9ebCOetD99cNiNdj16iK+LX1VywkJwZXMDvKBWuF9dbOPz+AHH8o52N4Xg6GOHuORt4PCtY7Y1Ma4F+Kj0XX6eaSL8/QUOh4+z6Ql5TzU6W8ln/W84PvkllP7IADyWQTg9SCg9SL0xjN9MYaIxoW9gRH+SaNFuEr5tmFnJ9WgG4WCCUDBBfSCJv+TODTt1q4KhySCxZDPxZDOG6Sxbyn9kaw3ZH9nCKvvyIMxlD3IDEERX1ZUHozd7kBOAZmidQAFb0EIjUkKID7JncgI4c3rfkGV6toL4FphfVd/kzAPfCEHT2Z6XVmi2XFxcXFxcHkL+BQjvIe4WoClZAAAAAElFTkSuQmCC">
+                      </div>
+                      <div class="methods-checkmark position-absolute d-flex">
+                        <span class="rounded-circle w-100 h-100 d-flex align-items-center justify-content-center">
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="p-methods col-sm-3 col-4 methods-visa border rounded position-relative">
+                      <div class="method-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAEkUlEQVRoge2XbWxTVRjHf325a9d1hbWsvGyj29jUgNLinC8kBLeZIYY38YNRowQF9IMfTIwZ8YuRGKMxiMZAjBJMiEaFxJcoLEAwbmxjEAcbcc5uE3TsfWVtt3WM9eX44W63vQTYBLINc3+fep5zzznP/57/ee4paGhoaGho3MHorg7YN1dkGYzsAlEKpE5DTtdiUMBxorHtvn3F3sQOlQD75ooso1HUC7BPbX6Txh+N6Nz9X6y8OB7QJ/YajOyawckDpBmMYmdiQK/uF6VTmc1NsiqxcZWAGeP5G2FLbFwt4I5DEzDdaAKmG+O1gnbTAM/llbNmYTWSXhCNCWp6l/L2mS3EhKzZJOlp2rkcq9nAaETgLjvJh8/fxWrPHABWv3eWuvMDzLIYeXVVFkVL7GQ5zOh18HffZb492cPeXzqUNQsX2ThUtkxpe8pq6fRfuTkB/VdsfNL4NEfbH+b7jQeZEz6G29FCdY+bo+0PAVByrx2r2QBAeb2PS4Nh8uZZlDlau4exmAz8XLaMu+dbVPO7XanUNAdVsS3FGar2UlfqpATc0ELeoIvdnR9D/m4EEg86W5S+dQXpyu/9lV1IBh3Z6ckA9ARHCQ5H2FjoVJKv8gZY90E9RTvqeOvgX1T84VfGz5udxJr74/MBeFzWCZOH6+xAIlV/BuCpl9AlOVkT2c07Z8As6VnldgCyHaq8fhbNtSAZ5KtVS/cwAHarpMzT1BGitkV+643tQ6o1Nq1cgGTQ4Q+FCY1EyXSYcbsm902d8BD/fnGIwHAEHGtxuh4HoOQ+Oykm2T5fnuhGCMibm6yMaemSBZxqjdtka3EGh8qW8Uj+LNX8SUY9L6yYD8B3p3upuzAIgOd2CYjGBCebAwBYXZvJTx9lfYETgHBU8HVNN4DK/+M7cKo1yLs/XCASE4B8UH98w8ObG3KUZzcUppNuSwLgm5oezrXJAhypEpl2060LgDEbARhnsdiVQelS+cJ6pMFH38DodQUAfHS4jaIddZTX+5TYa08sZEmm7PHxw9vUEaLhn0HOtcXt5c6eeBcmJeCEN6Ba3DJmn/2VXUr8WhYax9sZYtOeRn6q61NimXYTD+TaFKuYJT17X17MK49lxgUsnFjAhId4PAHfYJg5qZLy5tp8I1Q2xStJ/li1GRqJ0hW4QkGujScLndQ0B/APhVmQZlIOpj8UobY1yPvP5ivjc5zJ5DiTScQziR2YlAAhZBttKIyXuq+quhizNnarRFqKXHFae4YRAlbcM5ttJRlsK1HX9+BwhBc/bSQ5Sc/asVJ8ujXIgdoe5Zlnls+jINeG22VFp5PXvyUBANVevyIgEosfXoD8xA/YmH0u9F7mt/MDLJprIcVkoKU7xJGGS3x2vIP+oTBl67OVsrvnWDuHz8bPiN0qUZBrIy1FIsthps03ct28VP+J07f+egOtM4e+zx9V8r7jL3OagOnmfydgcFqy+G+o7uEqAQKOT20uN8WRxIZ6B6Kx7YCfmYrgUlSI1xNDKgG+fcXeaETnBg4CA1OZ2wQMAAeiCE//3qL26U5GQ0NDQ0PjtvEviauGDQcG+KsAAAAASUVORK5CYII=">
+                      </div>
+                      <div class="methods-checkmark position-absolute d-none">
+                        <span class="rounded-circle w-100 h-100 d-flex align-items-center justify-content-center">
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="p-methods col-sm-3 col-4  methods-amex border rounded position-relative">
+                      <div class="method-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADhklEQVRoge2WbWhbVRjHf+cmd7GxL0lznaZrUMooirTZHK2o7dAvvm06pm7r6gsMWToQBLcxhxUc6BcLWxFfJq26D76AW4VJ3VBmvqxlGzKrtKIrFLt1XcK69C2369I2yfGDM83N2mSd0DRwf3A+PM859zn//7kP9x4wMTExMTHJYURqomRnj0eqNCPl40BBFjTNhQ74BXJvoMnbmzxhMFCys8cjrfJ3oHgx1S2AUREV3sCBiov/JZTkWanSzNIVD+BElfuTEwYD19tmSSPhieRYSZlfKj0/P5LC5DDVQM5hGsg2poFsk/MGrDezqEyzcXJ3OYqA1s4Q77QHAThY72GD1wHA5tZ+OvsmAMhTFc6+dS9OuwWAkjd7ErUC71fMuUdcgu+rCxz/I4wi4OOt/9Y+dHqYxqOB/2fAV6shgMDYDFuritl/YohwJGbYfMdaLWGgrsqJ025BShA33LZgYGSa9u5xQ66uyslHdR42tfbz3GoHG7wO2rrGePv7+cXDTbSQw25h0xoHHX0THPAPkW9TeLHaaVhz4q8wj5UXUH6nDYsi2F6jEY7E6BqYnLPmFT1Ke/d4YnxxaphXDl0gLqHNV8a2h1z8fE5nV9sgUqbXl9HAS9XF5KkK33WN4T+nE74W49VHNFTL7NG2dIQQAnw1Gk/eX8g9rmV8eWYEfSo2Z801d9v58fWVieGr1fjt4iRHukaxWQXRuKTxaICZWAb1ZGgh1SLY9rALgA+2lCbyhXkW1lUUJeI/gxE6+yZ4/gEnqz12pqOSzzpDNG8uvaEmwJn+q7xxeDARhyMxNq5y8PKDLob0KMsLrBys9/BCSz+RmfitG1hXUYS7SOXbs6P8er0dFAH71rtpqNU4PzyVWNvSEaJmZT73uW/jm19GuKxH5627vMDK+srZA7h9mcJrj97BpbFpnv3kbxpqNXas1fhwSykNXw8QT/Mi0hrYXuNicjrOvh+CjF+bbYfKFXnUVxej5c8+7u/V6bsyRZlm49OToXRlKdNsND51lyE3cjVK/efnuRye4b3jQVY4VJ6pLKLxaTfvHgvOW8vwjXDv6c7cdEuAYFNlQnfO/8hMA9nGNJBtTAPZJtWAnhUVC0CA4RqbasC/iFpulZ+SA4MBgdwLjC6qnIUxLJC7khMGA4Emb6+ICq8QHEEQXlxtaRCEBRxWkKsuNXkHMz9gYmJiYmKSI/wD9hMbnG6CjGgAAAAASUVORK5CYII=">
+                      </div>
+                      <div class="methods-checkmark position-absolute d-none">
+                        <span class="rounded-circle w-100 h-100 d-flex align-items-center justify-content-center">
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="p-methods col-sm-3 col-4 mt-3 mt-sm-0 methods-discover border rounded position-relative">
+                      <div class="method-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAElUlEQVRoge2Ya1CUVRjHf+/uusjNZclW1gWpTCeuhplKmDk2DmZYCo6OggjmpdGycdRJUqsPNV10IDEbyzuk0+QGIqQpS4xhlpcZIVPQbAIvswlh7C6Cssu+fdhcWZB1vYysM+9vZj88z3POc/7/97xn5+yChISEhITEQ4zQOXHxYmNou7w9B0gEAh+8pFtiEaBUkLM8TKP5o2PBxYBDvK0KhOAHq89TxCsymzw2LKzvpRsZWcey48l7q3gAIdiusGd3zMg6jUh8gGruFheNnQ14yzvvDlXHoLOBhw7JQE8jGehpJAMdEUWR1tbW+9nytnRrIFyr4XFdCKPjh7N100YAkhLHYTiwn4qDBxkeF8vQmEiKCgsA2LppI0OjI4gY+Bhrs9cg2K6jLl2FLjcaXW4MasO7tJiuEDV4IFWVJwBotliIHPQE5WUGwrUa58dwYD/hWg0DB+iY8upEGhsbuzWgcOfu0JHjnK+rZeHr83hUo3Hm169by0svJzF/wUKsbVZK9hSxZdNX7PhWT3+djjM1NQSVf0DgsS+dcwKPbkCHwJSp0/g6bztDno6j4Ds9T0VEEBkVDUCdsR6Ak79V0S8khH2lPzItZTK7C/S8Nnf+ne0AgEKhID5hFLMyZ1NeZnDmn0tIYGd+HrnZ2fj7+1Og38WCNxcRGRVNUJCaESPj8asu7NLP75SembMyKN5diMnUxI68baRnZDrrWcuWkrVsKQA2q5Wa6mosZjNabf9uNXp0BgRBQCaXO+NFi5fwjb6Qs2drWDBvDqIoInS9md9iNTlPDhpM3DPDyFq2lIaGBiYkveIsxwyJJWZILAAtLS3MnT2LSSkpTEia6Bzje/YHzw3YbDZ++fkQ27ZsZsrUaQC02+18+tGH6MJCGfviOMwWM5MmJ7Phi8+pPnUKs9nE8WNHaYlM6dLvamQyAOkZmXxfvIfpqWkolUpnfUZaOjPS0gHoo1Kx8r332VtSTLPF4niQ1lbUpStcero9A6NGDCNswACWr1jFiJHxAMhlDs9jn09ArVbzyZocRo0eTVNTE/PnZFJ/+TJvvLWYZxe+A4DfacchvxqVgmmMIzcucTy60FBSZ6a7rBeudZyzzdvzAZieOpO9JcWszHqbz9atJ3jfEhSmCy5zXPa9zlgvujPUk6gqVqOqWA2AsO6mbrc74BWIIqpDa5ziO+PVBgRrK8H7luD/u77bMV5roFfDGfoWzaNXfbXbcV5nQGi7iupwDoG/bkCwt912vPcYsNvwP7mLoIMfI282ejytxw0Ituv4nS5EdTgHxZW/7nh+jxlQ/FtLQGU+AVU7kbV0f1m7bZ9OsRnoc0/K3CDYruF7zkDAiTx61/4Eov2Oe9h9AkWwOGMXAwIYREi+d6k3kV034XuuFN8ze/H9swzBem+/F6z9Yi7BYWfsYkDWLmS1y8UXgEfuegW7DR9jFT61FfSuq8Dn/BGPvk08au2jEq9p4zI6Guhyhbxw4R/d/3/fjceD10lu+RulsRKlsRIfYyXKi0eRtTXfF8E3EJUBYltI7KVr2riMoLT1Zfe1uYSEhISERE/yH2TLeAQjlXJSAAAAAElFTkSuQmCC">
+                      </div>
+                      <div class="methods-checkmark position-absolute d-none">
+                        <span class="rounded-circle w-100 h-100 d-flex align-items-center justify-content-center">
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <hr class="border mt-4">
+                  <div class="payment-card row justify-content-between">
+                      <div class="card-outline col-12 col-sm-6">
+                        <div class="card-wrap p-4">
+                          <div class="card-top d-flex justify-content-between align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAACR0lEQVRYhe3YO2tUQRQH8N9e1EKIL3RNYoLiA7RTCyXYCRIQCdaCWqqNfhUfQfHxFcSIqY2N2omCJioRhAibNbEwm4AQWS1mlsRl7+7cQNQifxj2sud/zpyZOTNzzrCG1ijl/J+hBzvbcFaCOr6iEr/bYheGUcWvVWzTuIXePEfOorbKTjS3OQw1OzKIxb/sSKP9xOmGI5sw848cabQqujJcxvammRrDBiF4SyjjnBB4RVCJemVcb8Mr41IJLzDQJJzDQ2HpYBa3sRGv428nLOAwfuAKzqO/Df85fJM2lZNYj/uJ/HvC7H5K5M9m2JowStiHPRhP5I9H/t5E/rZM+qE2ic84kMjfH/mfEvmlEu4mEGcsxcwrdCXo1HDEUszsSHQqCSfwRbEtOxX1kpAlGu3FKeG6KIK+qNeb0k9W0PiqYs2ZPKw5k4f/ypkiOITHip0zj6JeElJP4BpG8QzXtE8HREeuCinsSSF5Sjm1C410OA5guAPvZuTdKWhfvaDCBSEZWsiRzwvJ2sWCduuk5zPL75t1Qr7SSv4gyoveY7MZ3ucsXx76hAzuZY78DY4qfo9NZBgpqERIyOZzZFVsWYHNkUzYTTMFFT9gd46sHx8L2pu2bFcPCvVLyto+iTpjOfKnUT6aaG9RSDP+wJBQFbRTrOGgUE3k7cI6jkfefAd733Emb7p6hDOi0kLxHY4J8TDeoZO3kTeAiRbyCm6ge3nn7V4huoVXiCyOoFFylLWvfxqYEl4cSkJlsVmYtaoQIx1fIdbQwG9ZoKmY26p60wAAAABJRU5ErkJggg==">
+                            <span class="card-edit"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                          </div>
+                          <div class="card-IIN mt-5">
+                            <h6 class="fw-semibold mb-0">8948 xxxx xxxx 7894</h6>
+                          </div>
+                          <div class="card-bottom mt-3 d-flex justify-content-between align-items-center">
+                            <h6 class="fw-semibold mb-0">Anri Akhaladze</h6>
+                            <div class="payment-logo">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAACqElEQVRYhe3WzWtcVRiA8d+5MzdNa5E0zYfU2lZFUWtx1a0mKkqxioq4F8RQtOJKCAhGEAVFcSFdCP4PgkFwYYOu1EUrRbEIKhULTVqL1ZiYTOYeF2NuJk4z94zLMs/m3vPxvuc53Hs+6NOnzzVIqOpwhjvqPBq5GWOBxcivmFvg80nW1vvGGXU3uE8wqbBXZqfCguAnwWyYcvZ/yXzHA3gTh7vEXwy8MfqYD0eOeBbTgtEu/b8WTYdjTibJzFEf410c75K0pD7AnoOag0fV6jemRIAPBC+EKY0tZf4V+QiPpGQc2M7+Q+TbaDQwSb4/WWjWsMfD05rrFVl76yhvp4qEjL13tkQgz4knKZaSZY667K1NOddfvuWewKn/Cm7F2AFGbuqsX9rGjqeShQrB4TDllPaBM15PFanl7N7i/xhconklWSbDq+0FpxmKPJya4fqR1me6avYaK18lyxAdiSfsKmXy1jLOU+OvG+reHi70IEMumChlAulrQGsVdaNW9CQDB0oZDPcSmVX8WSH2qJLZXcpEfusltqiYeaw8ZDq41C5zrpfI1Yq9pFnrUaVojZ/BDj7DamrsX1VLd7wnlYZBc6XMrVzBp6nRf1za+lMVBQPdjtZOPgnP+L2UgYJXWo9qmg0un79629/bqe1KFilEr60XSplDnMF7qVkunmN5cXPdygqDSSdbyTvhmNMdMnAXLwdmU7LEyPmzNFZa5UaD7EGyij2ojY8Nm26v2CQTaM7zRORESrbVZX7+hsU/NcND5PsSNYL3XfBk+/WhQwYmWbub5yP3o+qUmV9b9eLybYbqe7yEhYr+X8pMhCnHw8zGdXXDsYLvub1o3YFvCYwHFvFLwdxBvgg2Zhdn1I27FxPYJ7NTNI8fZWbDc36oGq9Pnz7XHP8ArIanwUqX/XsAAAAASUVORK5CYII=">
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card-outline col-12 col-sm-6 mt-sm-0 mt-3">
+                      <div class="card-wrap card-new p-4">
+                        <div class="card-top d-flex justify-content-between align-items-center">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAACR0lEQVRYhe3YO2tUQRQH8N9e1EKIL3RNYoLiA7RTCyXYCRIQCdaCWqqNfhUfQfHxFcSIqY2N2omCJioRhAibNbEwm4AQWS1mlsRl7+7cQNQifxj2sud/zpyZOTNzzrCG1ijl/J+hBzvbcFaCOr6iEr/bYheGUcWvVWzTuIXePEfOorbKTjS3OQw1OzKIxb/sSKP9xOmGI5sw848cabQqujJcxvammRrDBiF4SyjjnBB4RVCJemVcb8Mr41IJLzDQJJzDQ2HpYBa3sRGv428nLOAwfuAKzqO/Df85fJM2lZNYj/uJ/HvC7H5K5M9m2JowStiHPRhP5I9H/t5E/rZM+qE2ic84kMjfH/mfEvmlEu4mEGcsxcwrdCXo1HDEUszsSHQqCSfwRbEtOxX1kpAlGu3FKeG6KIK+qNeb0k9W0PiqYs2ZPKw5k4f/ypkiOITHip0zj6JeElJP4BpG8QzXtE8HREeuCinsSSF5Sjm1C410OA5guAPvZuTdKWhfvaDCBSEZWsiRzwvJ2sWCduuk5zPL75t1Qr7SSv4gyoveY7MZ3ucsXx76hAzuZY78DY4qfo9NZBgpqERIyOZzZFVsWYHNkUzYTTMFFT9gd46sHx8L2pu2bFcPCvVLyto+iTpjOfKnUT6aaG9RSDP+wJBQFbRTrOGgUE3k7cI6jkfefAd733Emb7p6hDOi0kLxHY4J8TDeoZO3kTeAiRbyCm6ge3nn7V4huoVXiCyOoFFylLWvfxqYEl4cSkJlsVmYtaoQIx1fIdbQwG9ZoKmY26p60wAAAABJRU5ErkJggg==">
+                          <span class="card-edit"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        </div>
+                        <div class="card-IIN mt-5">
+                          <h6 class="fw-semibold mb-0">8948 xxxx xxxx 7894</h6>
+                        </div>
+                        <div class="card-bottom mt-3 d-flex justify-content-between align-items-center">
+                          <h6 class="fw-semibold mb-0">Anri Akhaladze</h6>
+                          <div class="payment-logo">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAACqElEQVRYhe3WzWtcVRiA8d+5MzdNa5E0zYfU2lZFUWtx1a0mKkqxioq4F8RQtOJKCAhGEAVFcSFdCP4PgkFwYYOu1EUrRbEIKhULTVqL1ZiYTOYeF2NuJk4z94zLMs/m3vPxvuc53Hs+6NOnzzVIqOpwhjvqPBq5GWOBxcivmFvg80nW1vvGGXU3uE8wqbBXZqfCguAnwWyYcvZ/yXzHA3gTh7vEXwy8MfqYD0eOeBbTgtEu/b8WTYdjTibJzFEf410c75K0pD7AnoOag0fV6jemRIAPBC+EKY0tZf4V+QiPpGQc2M7+Q+TbaDQwSb4/WWjWsMfD05rrFVl76yhvp4qEjL13tkQgz4knKZaSZY667K1NOddfvuWewKn/Cm7F2AFGbuqsX9rGjqeShQrB4TDllPaBM15PFanl7N7i/xhconklWSbDq+0FpxmKPJya4fqR1me6avYaK18lyxAdiSfsKmXy1jLOU+OvG+reHi70IEMumChlAulrQGsVdaNW9CQDB0oZDPcSmVX8WSH2qJLZXcpEfusltqiYeaw8ZDq41C5zrpfI1Yq9pFnrUaVojZ/BDj7DamrsX1VLd7wnlYZBc6XMrVzBp6nRf1za+lMVBQPdjtZOPgnP+L2UgYJXWo9qmg0un79629/bqe1KFilEr60XSplDnMF7qVkunmN5cXPdygqDSSdbyTvhmNMdMnAXLwdmU7LEyPmzNFZa5UaD7EGyij2ojY8Nm26v2CQTaM7zRORESrbVZX7+hsU/NcND5PsSNYL3XfBk+/WhQwYmWbub5yP3o+qUmV9b9eLybYbqe7yEhYr+X8pMhCnHw8zGdXXDsYLvub1o3YFvCYwHFvFLwdxBvgg2Zhdn1I27FxPYJ7NTNI8fZWbDc36oGq9Pnz7XHP8ArIanwUqX/XsAAAAASUVORK5CYII=">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="card-details mt-5 w-75">
+                    <div class="form-group has-success mb-3">
+                      <label for="cc-name" class="control-label mb-2">Holder name</label>
+                      <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="cc-number" class="control-label mb-2">Card number</label>
+                      <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified" value="" data-val="true" data-val-cc-number="Please enter a valid card number" autocomplete="cc-number" placeholder="xxxx xxxx xxxx xxxx">
+                  </div>
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="form-group">
+                              <label for="cc-exp" class="control-label mb-2">Expiration</label>
+                              <input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" value="" data-val="true" placeholder="MM / YY" autocomplete="cc-exp">
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <label for="x_card_code" class="control-label mb-2">CVC/CVV</label>
+                          <div class="input-group">
+                              <input id="x_card_code" name="x_card_code" type="tel" class="form-control cc-cvc" value="" data-val="true" data-val-cc-cvc="Please enter a valid security code" autocomplete="off" placeholder="****" maxlength="4">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Save Card</label>
+                  </div>
+                
+                  <div class="payment-form-button">
+                    <button id="confirm-button" type="submit" class="px-3 py-2 rounded-pill border-0">
+                        <span id="payment-button-sending">Confirm and reserve</span>
+                    </button>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="booking-right col-xl-4 col-12 mb-4 mb-xl-0">
+            <div class="right-wrap border border-2 p-4">
+              <div class="sprenty-trip">
+                <div class="trip-route d-flex">
+                  <p class="fw-bold mb-0 me-3">TMK</p>
+                  <span class="route-circles text-secondary"> &#9679;</span>
+                  <span class="route-circles text-secondary"> &#9679;</span>
+                  <span class="route-circles text-secondary"> &#9679;</span>
+                  <span class="route-circles text-secondary"> &#9679;</span>
+                  <span class="mx-3"><i class="fa-solid fa-car-side"></i></span>
+                  <span class="route-circles text-secondary"> &#9679;</span>
+                  <span class="route-circles text-secondary"> &#9679;</span>
+                  <span class="route-circles text-secondary"> &#9679;</span>
+                  <span class="route-circles text-secondary"> &#9679;</span>                  <p class="fw-bold mb-0 ms-3">SBRTL</p>
+                </div>
+                <div class="trip-rating mt-3">
+                  <span class="d-flex align-items-center">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <p class="mb-0 ms-2 fw-bold">4.8</p>
+                    <p class="mb-0 ms-2 text-secondary">(122 Reviews)</p>
+                  </span>
+                </div>
+                <div class="trip-image mt-4"></div>
+                <div class="trip-instructions mt-4">
+                  <div class="trip-addons">
+                    <p class="mb-0 text-secondary fw-bold">1 venue + Boombox</p>
+                    <hr class="border-1">
+                  </div>
+                  <div class="trip-checks row">
+                    <div class="trip-checkin col-6">
+                      <p class="mb-0 text-secondary fw-bold">Check in</p>
+                      <p class="mb-0 fw-bold">June 27, 24:00 UTC</p>
+                    </div>
+                    <div class="trip-checkout col-6">
+                      <p class="mb-0 text-secondary fw-bold">Check Out</p>
+                      <p class="mb-0 fw-bold">June 28, 04:00 UTC</p>
+                    </div>
+                    <div class="trip-summary">
+                      <h4 class="mt-5 fw-bold">Fare Summary</h4>  
+                      <div class="summary-table d-flex justify-content-between px-3 mt-3">
+                        <p class="mb-0 fw-bold text-secondary">Venue fee</p>
+                        <p class="mb-0 fw-bold">&#8382;250</p>
+                      </div>
+                      <div class="summary-table d-flex justify-content-between px-3 mt-3">
+                        <p class="mb-0 fw-bold text-secondary">Tax and fee</p>
+                        <p class="mb-0 fw-bold">&#8382;8</p>
+                      </div>
+                      <div class="summary-table d-flex justify-content-between px-3 mt-3">
+                        <p class="mb-0 fw-bold text-secondary">Service Fee</p>
+                        <p class="mb-0 fw-bold">&#8382;10</p>
+                      </div>
+                      <div class="summary-table final-price d-flex justify-content-between py-2 px-3 mt-3 rounded ">
+                        <p class="mb-0 fw-bold">Total</p>
+                        <p class="mb-0 fw-bold">&#8382;268</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="sprenty-exploreWrap container position-relative">
+
+      <div class="sprenty-offers offers-checkout container row position-absolute justify-content-center">
+        <div class="offers-inner position-relative  align-items-center justify-content-evenly d-flex flex-lg-row flex-column w-100 px-lg-5">
+          <div class="offers-text col-12 col-lg-6 text-lg-start text-center">
+            <h1 class="fw-bold text-white mb-3">Get our pro offers</h1>
+            <p class="text-white m-0">Create a visual identity for your company, and an <br class="break"> overall brand</p>
+          </div>
+          <div class="offers-input col-12 col-lg-6">
+            <div class="offers-inputWrap position-relative d-flex align-items-center">
+              <input type="enail" placeholder="Enter Email" class="border-0 rounded ps-3">
+              <button class="border-0 rounded position-absolute text-white">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="sprenty-footer footer-checkout">
+          <div class="footer-wrap container">
+            <div class="wrap-inner row">
+              <div class="footer-company d-none d-lg-block col-lg-3">
+                <div class="company-image mb-4">
+                  <img class="" src="../assets/images/logo.png" alt="" />
+                </div>
+                <div class="company-desc">
+                  <span 
+                    >This is the team that specializes in <br />
+                    making sure you are provided with <br />
+                    pristine and clean venues</span
+                  >
+                </div>
+              </div>
+              <div class="footer-services col-lg-3">
+                <h5 class="fw-bold">Services</h5>
+                <ul>
+                  <li class="my-2"><a href="#">Venue Booking</a></li>
+                  <li class="my-2"><a href="#">Rental Inventory</a></li>
+                </ul>
+              </div>
+              <div class="footer-support mt-lg-0 mt-4 col-lg-3">
+                <h5 class="fw-bold">Support</h5>
+                <ul>
+                  <li class="my-2"><a href="#">Account</a></li>
+                  <li class="my-2"><a href="#">Legal</a></li>
+                  <li class="my-2"><a href="#">Contact</a></li>
+                  <li class="my-2"><a href="#">Terms & Conditions</a></li>
+                  <li class="my-2"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-business mt-lg-0 mt-4 col-lg-3">
+                <h5 class="fw-bold">Business</h5>
+                <ul>
+                  <li class="my-2"><a href="#">Success</a></li>
+                  <li class="my-2"><a href="#">About Sprenty</a></li>
+                  <li class="my-2"><a href="#">Blog</a></li>
+                  <li class="my-2"><a href="#">Information</a></li>
+                  <li class="my-2"><a href="#">Booking Guide</a></li>
+                </ul>
+              </div>
+              <div class="footer-img my-4 d-block d-lg-none">
+                <img class="" src="../assets/images/logo.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js" integrity="sha256-frGUwmSN4CLLjyk5m59ECdXsDMUxTW5O6hdceNHVCJo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/all.min.js"></script>
+    <script src="../assets/js/cleaveFormat.js"></script>
+  </body>
+</html>

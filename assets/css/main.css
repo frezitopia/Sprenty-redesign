@@ -36,7 +36,6 @@
 }
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalHeading h2 {
   color: var(--textColor) !important;
-  font-size: 36px !important;
 }
 * .sprenty-mainContainter .sprenty-Modal .sprenty-modalWrap .sprenty-modalHeading p span {
   color: var(--sprentyBlue);
@@ -565,7 +564,10 @@
   border: none;
   background-color: var(--sprentyBlue);
   padding: 5px 10px;
+}
+.sprenty-trending .sprenty-trendingWrap .sprenty-trendingList .sprenty-trendingListWrap .sprenty-trendingVenue .sprenty-venueWrap .sprenty-booknow button a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .sprenty-explore {
@@ -639,7 +641,8 @@
 .sprenty-explore .sprenty-exploreWrap .sprenty-owlTwo .owltwo-item .owltwo-card .owltwo-location {
   color: var(--textColor);
 }
-.sprenty-explore .sprenty-exploreWrap .sprenty-offers {
+
+.sprenty-offers {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -647,12 +650,12 @@
   height: 250px;
   bottom: -15%;
 }
-.sprenty-explore .sprenty-exploreWrap .sprenty-offers .offers-inner {
+.sprenty-offers .offers-inner {
   height: 100%;
   border-radius: 15px;
   background-color: var(--sprentyDarkBlue);
 }
-.sprenty-explore .sprenty-exploreWrap .sprenty-offers .offers-inner::after {
+.sprenty-offers .offers-inner::after {
   content: "";
   background: url("../images/pattern.png") repeat center;
   background-size: contain;
@@ -664,33 +667,39 @@
   position: absolute;
   border-radius: 15px;
 }
-.sprenty-explore .sprenty-exploreWrap .sprenty-offers .offers-inner .offers-text {
+.sprenty-offers .offers-inner .offers-text {
   z-index: 2;
 }
-.sprenty-explore .sprenty-exploreWrap .sprenty-offers .offers-inner .offers-input {
+.sprenty-offers .offers-inner .offers-input {
   z-index: 2;
 }
-.sprenty-explore .sprenty-exploreWrap .sprenty-offers .offers-inner .offers-input .offers-inputWrap input {
+.sprenty-offers .offers-inner .offers-input .offers-inputWrap input {
   outline: none;
   height: 60px;
   width: 80%;
 }
-.sprenty-explore .sprenty-exploreWrap .sprenty-offers .offers-inner .offers-input .offers-inputWrap button {
+.sprenty-offers .offers-inner .offers-input .offers-inputWrap button {
   width: 110px;
   height: 45px;
   right: 21%;
-  background-color: #23262F;
+  background-color: #23262f;
 }
 
 .sprenty-footer {
   background-color: #f7f7f7;
   padding-top: 250px;
 }
-.sprenty-footer .wrap-inner .company-desc ul, .sprenty-footer .wrap-inner .footer-services ul, .sprenty-footer .wrap-inner .footer-support ul, .sprenty-footer .wrap-inner .footer-business ul {
+.sprenty-footer .wrap-inner .company-desc ul,
+.sprenty-footer .wrap-inner .footer-services ul,
+.sprenty-footer .wrap-inner .footer-support ul,
+.sprenty-footer .wrap-inner .footer-business ul {
   list-style-type: none;
   padding: 0;
 }
-.sprenty-footer .wrap-inner .company-desc ul li a, .sprenty-footer .wrap-inner .footer-services ul li a, .sprenty-footer .wrap-inner .footer-support ul li a, .sprenty-footer .wrap-inner .footer-business ul li a {
+.sprenty-footer .wrap-inner .company-desc ul li a,
+.sprenty-footer .wrap-inner .footer-services ul li a,
+.sprenty-footer .wrap-inner .footer-support ul li a,
+.sprenty-footer .wrap-inner .footer-business ul li a {
   text-decoration: none;
   color: var(--textColor);
 }
@@ -778,8 +787,14 @@
   .sprenty-footer {
     padding-top: 140px;
   }
-  .sprenty-explore {
-    padding-bottom: 200px;
+  .sprenty-explore, .checkout-wrap {
+    padding-bottom: 200px !important;
+  }
+  .offers-checkout {
+    top: -170px !important;
+  }
+  .card-details {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -826,7 +841,7 @@
     font-size: 1.1rem;
   }
   .sprenty-districtsWrap {
-    padding-top: 250px;
+    padding-top: 400px !important;
   }
   .sprenty-listWrap {
     box-shadow: none !important;
@@ -868,11 +883,119 @@
     width: 90px !important;
   }
 }
-@media screen and (max-width: 576px) {
-  .sprenty-districtsWrap {
-    padding-top: 300px !important;
-  }
+.sprenty-checkout {
+  background-color: #fafafc;
 }
+.sprenty-checkout .checkout-wrap {
+  padding-bottom: 250px;
+}
+.sprenty-checkout .checkout-wrap .route-list a:hover {
+  color: var(--textColor) !important;
+}
+.sprenty-checkout .booking-left .left-header hr {
+  background-color: #f4f5f7;
+}
+.sprenty-checkout .booking-left .date-wrap {
+  background-color: #f4f4f6;
+}
+.sprenty-checkout .booking-left .left-payment .payment-methods .methods-wrap .p-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100px;
+  height: 55px;
+}
+.sprenty-checkout .booking-left .left-payment .payment-methods .methods-wrap .pm-active {
+  background-color: #e4e7ec !important;
+  border-color: var(--sprentyBlue) !important;
+}
+.sprenty-checkout .booking-left .left-payment .payment-methods .methods-wrap .methods-checkmark {
+  bottom: 75%;
+  left: 89%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+.sprenty-checkout .booking-left .left-payment .payment-methods .methods-wrap .methods-checkmark span {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: var(--sprentyBlue);
+}
+.sprenty-checkout .booking-left .left-payment hr {
+  background-color: #f4f5f7;
+}
+.sprenty-checkout .booking-left .payment-card .card-outline .card-new {
+  background-color: #bddba7 !important;
+}
+.sprenty-checkout .booking-left .payment-card .card-outline .card-wrap {
+  border-radius: 25px;
+  background-color: #cfd9fd;
+}
+.sprenty-checkout .booking-left .payment-card .card-outline .card-wrap .card-top .card-emv {
+  font-size: 34px;
+  color: #3b3e44;
+}
+.sprenty-checkout .booking-left .payment-card .card-outline .card-wrap .card-top .card-edit {
+  font-size: 24px;
+  color: var(--textColor);
+  cursor: pointer;
+}
+.sprenty-checkout .booking-right .right-wrap {
+  border-radius: 15px;
+}
+.sprenty-checkout .booking-right .right-wrap .sprenty-trip .trip-route span svg {
+  color: var(--sprentyBlue) !important;
+  font-size: 25px;
+}
+.sprenty-checkout .booking-right .right-wrap .sprenty-trip .trip-rating span svg {
+  color: var(--starColor);
+}
+.sprenty-checkout .booking-right .right-wrap .sprenty-trip .trip-image {
+  border-radius: 10px;
+  height: 180px;
+  background: url("../images/destinations/mziuri.webp") center no-repeat;
+  background-size: cover;
+}
+.sprenty-checkout .booking-right .right-wrap .sprenty-trip .trip-summary .final-price {
+  background-color: #F4F5F7;
+}
+
+.offers-checkout {
+  top: -130px !important;
+}
+
+.form-control {
+  background-color: #f4f5f7;
+}
+.form-control:focus {
+  border-color: var(--sprentyBlue);
+  box-shadow: none;
+}
+
+.form-check-input:focus {
+  background-color: var(--sprentyBlue);
+  box-shadow: none;
+}
+
+.payment-form-button button {
+  color: #ffffff;
+  background-color: var(--sprentyDarkBlue);
+}
+
+.form-check-input:checked {
+  border-color: var(--sprentyDarkBlue);
+  background-color: var(--sprentyBlue);
+}
+
+.footer-checkout {
+  background-color: #f4f5f7 !important;
+}
+
+.footer-services ul li a:hover, .footer-support ul li a:hover, .footer-business ul li a:hover {
+  color: #8B8E93 !important;
+}
+
 @media screen and (max-width: 1200px) {
   .sprenty-leftBanner {
     display: none;
@@ -890,6 +1013,17 @@
   }
   .sprenty-basketball {
     padding: 0 !important;
+  }
+  .route-list {
+    display: none !important;
+  }
+  .left-header h1 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 323px) {
+  .methods-amex {
+    margin-top: 1rem !important;
   }
 }
 .owl-stage-outer {
