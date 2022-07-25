@@ -951,7 +951,7 @@
 .sprenty-checkout .booking-right .right-wrap .sprenty-trip .trip-rating span svg {
   color: var(--starColor);
 }
-.sprenty-checkout .booking-right .right-wrap .sprenty-trip .trip-image {
+ .trip-image {
   border-radius: 10px;
   height: 180px;
   background: url("../images/destinations/mziuri.webp") center no-repeat;
